@@ -47,6 +47,75 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
   background-color: #f1f1f1;
 }
 
+.glow-link {
+    text-decoration: none; /* Remove underline */
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.glow-link:hover {
+    color: lightcoral;
+    text-shadow: 0 0 10px lightskyblue, 0 0 20px pink, 0 0 30px white;
+}
+
+
+.pre-adoption-container {
+    position: relative;
+    background: url('assets/images/preadoptionforum.jpg') no-repeat center center;
+    background-size: cover;
+    /*min-height: 100vh;  Full screen height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 20px;
+}
+
+.pre-adoption-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.3); /* Light overlay for readability */
+    backdrop-filter: blur(10px); /* Blur effect */
+    z-index: 1;
+}
+
+.pre-adoption-container1 {
+    position: relative;
+    background: url('assets/images/adoptiondomestic.jpg') no-repeat center center;
+    background-size: cover;
+    /*min-height: 100vh;  Full screen height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 20px;
+}
+
+.pre-adoption-container1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.3); /* Light overlay for readability */
+    backdrop-filter: blur(10px); /* Blur effect */
+    z-index: 1;
+}
+
+
+.pre-adoption-content {
+    position: relative;
+    z-index: 2;
+    background: rgba(255, 255, 255, 0.7); /* Light background for text */
+    padding: 30px;
+    border-radius: 10px;
+}
+
+
+
 </style>
 </head>
 <body>
@@ -89,7 +158,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 </div>
 
 <!-- Header -->
-<header class="w3-container w3-red w3-center" style="padding:150px 30px; background-image: url('assets/images/unity.jpg'); background-size: cover; background-position: center;">
+<header class="w3-container w3-white w3-center" style="padding:150px 30px; background-image: url('assets/images/unity.jpg'); background-size: cover; background-position: center;">
 <h1 class="w3-margin" 
     style="color: #F0B430; text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;">
   <strong>MIMAROPA'S RESOURCE SITE ON ADOPTION</strong>
@@ -108,7 +177,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
       <div class="w3-card-4" style="width: 300px; height: 350px;">
         <img src="assets/images/preadoptionforum.jpg" alt="Card Image 1" style="width:100%; height: 200px; object-fit: cover;">
         <div class="w3-container">
-          <h3><a href="#preadopt">Pre-Adoption Forum</a></h3>
+          <h3><a href="#preadopt" class="glow-link">Pre-Adoption Forum</a></h3>
         </div>
       </div>
 
@@ -116,7 +185,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
       <div class="w3-card-4" style="width: 300px; height: 350px;">
         <img src="assets/images/adoptiondomestic.jpg" alt="Card Image 2" style="width:100%; height: 200px; object-fit: cover;">
         <div class="w3-container">
-          <h5><a href="#prosadopt">Application as Prospective Adoptive Parents</a></h5>
+          <h5><a href="#prosadopt" class="glow-link">Application as Prospective Adoptive Parents</a></h5>
         </div>
       </div>
 
@@ -124,7 +193,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
       <div class="w3-card-4" style="width: 300px; height: 350px;">
         <img src="assets/images/fostercare.jpg" alt="Card Image 3" style="width:100%; height: 200px; object-fit: cover;">
         <div class="w3-container">
-          <h5>Filing a Petition for Administrative Adoption</h5>
+          <h5><a href="#petfroadminadop" class="glow-link">Filing a Petition for Administrative Adoption</a></h5>
         </div>
       </div>
 
@@ -132,52 +201,56 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
       <div class="w3-card-4" style="width: 300px; height: 350px;">
         <img src="assets/images/sibra.jpeg" alt="Card Image 3" style="width:100%; height: 200px; object-fit: cover;">
         <div class="w3-container">
-          <h6>Filing of Petition for Rectification of Simulated Birth (RA 11222)</h6>
+          <h6><a href="#sibra" class="glow-link">Filing of Petition for Rectification of Simulated Birth (RA 11222)</a></h6>
         </div>
       </div>
                   <!-- Card 3 -->
       <div class="w3-card-4" style="width: 300px; height: 350px;">
         <img src="assets/images/forms and templates.jpg" alt="Card Image 3" style="width:100%; height: 200px; object-fit: cover;">
         <div class="w3-container">
-          <h3>List of Requirements</h3>
+          <h3><a href="#listofreq" class="glow-link">List of Requirements</a></h3>
         </div>
-      </div>
+      </div>`
 
     </div>
   </div>
 </div>
 
 
-<h1 id="preadopt"></h1>
+
 <!-- Second Grid -->
-<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
-  <div class="w3-content">
+<!-- Second Grid -->
+<div class="w3-row-padding pre-adoption-container">
+  <p id="preadopt"></p>
+  <div class="w3-content pre-adoption-content">
     <div class="w3-third w3-center">
-
-      <h1 >PRE-ADOPTION FORUM</h1>
-
+      <h1>PRE-ADOPTION FORUM</h1>
     </div>
-     <!-- Parallel Lines -->
+
+    <!-- Parallel Lines -->
     <div style="display: flex; flex-direction: column; gap: 5px; margin: 10px 0;">
       <hr style="width: 100%; border: 1px solid #ccc; margin: 0;">
       <hr style="width: 100%; border: 1px solid #ccc; margin: 0;">
     </div>
 
-
     <div class="w3-twothird">
-        <p align="justify">The Pre-Adoption Forum aims to help interested individuals and couples to better understand the steps in legal adoption process including its requirements and decide whether or not to pursue adopting a child. It is also a requirement in filing a legal adoption. Visit our Facebook Page to register</p>
+      <p align="justify">
+        The Pre-Adoption Forum aims to help interested individuals and couples better understand the steps in the legal adoption process, including its requirements, and decide whether or not to pursue adopting a child. It is also a requirement in filing a legal adoption. Visit our Facebook Page to register.
+      </p>
     </div>
   </div>
 </div>
 
 
-<h1 id="prosadopt"></h1>
+
+
 <!-- 4th Grid -->
-<div class="w3-row-padding w3-padding-64 w3-container">
-  <div class="w3-content">
+<div class="w3-row-padding pre-adoption-container1">
+  <h1 id="prosadopt"></h1>
+  <div class="w3-content pre-adoption-content">
     <div class="w3-third w3-center">
 
-      <h1 >APPLICATION AS ADOPTIVE PARENTS</h1>
+      <h1 align="center">APPLICATION AS ADOPTIVE PARENTS</h1>
 
     </div>
 
@@ -227,7 +300,6 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
                     <li>Go to the Child Caring Agency for the physical entrustment of the child. If you accepted, a schedule will be set for the placement of the child with you. You will need to go directly where the child is. Some Child Caring Agency may require you to spend 1-2 nights in the agency or around the area to help the child adjust before he/she be placed/ entrusted with you.</li>
                     <li>Complete six (6) months of Supervised Trial Custody. After the placement, your adoption social worker will oversee the adjustment between you and the child. After thorough assessment of satisfactory adjustment where bond and rapport have taken place, your social worker will recommend for you to proceed with filing a petition for administrative adoption.  </li>
 
-
                   </ol>
                 </div>
             </div>
@@ -238,7 +310,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
   </div>
 </div>
 
-<h1 id=""></h1>
+<h1 id="petfroadminadop"></h1>
 <!-- 5th Grid -->
 <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
   <div class="w3-content">
@@ -328,6 +400,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 </div>
 
 
+<h1 id="sibra"></h1>
 <!--  Grid -->
 <div class="w3-row-padding w3-padding-64 w3-container">
   <div class="w3-content">
@@ -394,7 +467,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 
 
 
-<h1 id="preadopt"></h1>
+<h1 id="listofreq"></h1>
 <!-- Second Grid -->
 <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
   <div class="w3-content">
@@ -414,7 +487,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
         <p align="justify">The list of requirements will depend on the type or category of adoption you will process. For complete set of documentary requirements, please select the applicable type of adoption.</p>
 
 
-                      
+
               <button type="button" class="collapsible">Application as Adoptive Parents</button>
               <div class="content">
                 <p>• Application and Undertaking for Adoptive Applicants</p>
@@ -465,7 +538,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 
               <button type="button" class="collapsible">Step-parent Adoption</button>
               <div class="content">
-                <p>• Step-parent Adoption</p>
+                <p>• <a href="assets/docs/step-parent-adoption/STEP-PARENT ADOPTION CHECKLIST.docx" target="_blank">Step-parent Adoption</a></p>
               </div>
 
 
@@ -496,9 +569,6 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
               }
               </script>
 
-
-
-        
     </div>
   </div>
 </div>
