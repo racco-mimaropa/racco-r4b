@@ -9,6 +9,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 .w3-bar,h1,button {font-family: "Montserrat", sans-serif}
@@ -106,6 +107,55 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 }
 
 
+.pre-adoption-container2 {
+    position: relative;
+    background: url('assets/images/fostercare.jpg') no-repeat center center;
+    background-size: cover;
+    /*min-height: 100vh;  Full screen height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 20px;
+}
+
+.pre-adoption-container2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.3); /* Light overlay for readability */
+    backdrop-filter: blur(10px); /* Blur effect */
+    z-index: 1;
+}
+
+
+.pre-adoption-container3 {
+    position: relative;
+    background: url('assets/images/fostercare.jpg') no-repeat center center;
+    background-size: cover;
+    /*min-height: 100vh;  Full screen height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 20px;
+}
+
+.pre-adoption-container3::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.3); /* Light overlay for readability */
+    backdrop-filter: blur(10px); /* Blur effect */
+    z-index: 1;
+}
+
+
+
 .pre-adoption-content {
     position: relative;
     z-index: 2;
@@ -156,6 +206,9 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
     <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 4</a>
   </div>
 </div>
+<!-- Navbar -->
+
+
 
 <!-- Header -->
 <header class="w3-container w3-white w3-center" style="padding:150px 30px; background-image: url('assets/images/unity.jpg'); background-size: cover; background-position: center;">
@@ -166,23 +219,44 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
   <!--<button class="w3-button w3-black w3-padding-large w3-large w3-margin-top">Get Started</button>-->
 </header>
 
+<!-- Header -->
+
+<div class="w3-row">
+  <div class="w3-col s4 w3-green w3-center"><p>s4</p></div>
+  <div class="w3-col s4 w3-dark-grey w3-center"><p>s4</p></div>
+  <div class="w3-col s4 w3-red w3-center"><p>s4</p></div>
+</div>
+
+
 <!-- First Grid -->
 <div class="w3-row-padding w3-padding-64 w3-container">
   <div class="w3-content">
 
     <!-- Cards in Horizontal Layout -->
-    <div class="w3-row-padding w3-center" style="display: flex; justify-content: center; gap: 20px;">
+    <div class="w3-row-padding w3-center" style="display: flex; justify-content: center; gap: 10px;">
+
+
+
+      <!-- Card 0 -->
+      <div class="w3-card-4" style="width: 350px; height: 350px;">
+        <img src="assets/images/typesofadopt.jpg" alt="Card Image 1" style="width:100%; height: 200px; object-fit: cover;">
+        <div class="w3-container">
+          <h3><a href="#preadopt" class="glow-link">Types of Domestic Adoption</a></h3>
+        </div>
+      </div>
+
+
 
       <!-- Card 1 -->
-      <div class="w3-card-4" style="width: 300px; height: 350px;">
-        <img src="assets/images/preadoptionforum.jpg" alt="Card Image 1" style="width:100%; height: 200px; object-fit: cover;">
+      <div class="w3-card-4" style="width: 350px; height: 350px;">
+        <img src="assets/images/preadoptionforum.jpg" alt="Card Image 1" style="width:90%; height: 200px; object-fit: cover;">
         <div class="w3-container">
           <h3><a href="#preadopt" class="glow-link">Pre-Adoption Forum</a></h3>
         </div>
       </div>
 
       <!-- Card 2 -->
-      <div class="w3-card-4" style="width: 300px; height: 350px;">
+      <div class="w3-card-4" style="width: 350px; height: 350px;">
         <img src="assets/images/adoptiondomestic.jpg" alt="Card Image 2" style="width:100%; height: 200px; object-fit: cover;">
         <div class="w3-container">
           <h5><a href="#prosadopt" class="glow-link">Application as Prospective Adoptive Parents</a></h5>
@@ -190,7 +264,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
       </div>
 
       <!-- Card 3 -->
-      <div class="w3-card-4" style="width: 300px; height: 350px;">
+      <div class="w3-card-4" style="width: 350px; height: 350px;">
         <img src="assets/images/fostercare.jpg" alt="Card Image 3" style="width:100%; height: 200px; object-fit: cover;">
         <div class="w3-container">
           <h5><a href="#petfroadminadop" class="glow-link">Filing a Petition for Administrative Adoption</a></h5>
@@ -198,14 +272,14 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
       </div>
 
             <!-- Card 3 -->
-      <div class="w3-card-4" style="width: 300px; height: 350px;">
+      <div class="w3-card-4" style="width: 350px; height: 350px;">
         <img src="assets/images/sibra.jpeg" alt="Card Image 3" style="width:100%; height: 200px; object-fit: cover;">
         <div class="w3-container">
-          <h6><a href="#sibra" class="glow-link">Filing of Petition for Rectification of Simulated Birth (RA 11222)</a></h6>
+          <small><a href="#sibra" class="glow-link" style="size: 9;">Filing of Petition for Rectification of Simulated Birth (RA 11222)</a></small>
         </div>
       </div>
                   <!-- Card 3 -->
-      <div class="w3-card-4" style="width: 300px; height: 350px;">
+      <div class="w3-card-4" style="width: 350px; height: 350px;">
         <img src="assets/images/forms and templates.jpg" alt="Card Image 3" style="width:100%; height: 200px; object-fit: cover;">
         <div class="w3-container">
           <h3><a href="#listofreq" class="glow-link">List of Requirements</a></h3>
@@ -218,10 +292,9 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 
 
 
-<!-- Second Grid -->
-<!-- Second Grid -->
-<div class="w3-row-padding pre-adoption-container">
-  <p id="preadopt"></p>
+<!-- Second Grid 
+<p id="preadopt"></p>-->
+<div class="w3-row-padding pre-adoption-container" id="preadopt">
   <div class="w3-content pre-adoption-content">
     <div class="w3-third w3-center">
       <h1>PRE-ADOPTION FORUM</h1>
@@ -243,10 +316,9 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 
 
 
-
+<h1 id="prosadopt"></h1>
 <!-- 4th Grid -->
 <div class="w3-row-padding pre-adoption-container1">
-  <h1 id="prosadopt"></h1>
   <div class="w3-content pre-adoption-content">
     <div class="w3-third w3-center">
 
@@ -312,11 +384,11 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 
 <h1 id="petfroadminadop"></h1>
 <!-- 5th Grid -->
-<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
-  <div class="w3-content">
+<div class="w3-row-padding pre-adoption-container2">
+  <div class="w3-content pre-adoption-content">
     <div class="w3-third w3-center">
 
-      <h1>FILING A PETITION FOR ADMINISTRATIVE ADOPTION</h1>
+      <h2>FILING A PETITION FOR ADMINISTRATIVE ADOPTION</h2>
 
     </div>
      <!-- Parallel Lines -->
@@ -488,22 +560,15 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 
 
 
-              <button type="button" class="collapsible">Application as Adoptive Parents</button>
+              <button type="button" class="collapsible">Relative Adoption Proper (Adoption of a relative within 4th degree)</button>
               <div class="content">
-                <p>• Application and Undertaking for Adoptive Applicants</p>
-                <p>• Checklist for Application PAPs</p>
-                <p>• Child Care Plan</p>
-                <p>• HSR</p>
-                <p>• Medical Evaluation Form for PAPs</p>
-                <p>• Undertaking regarding attendance to trainings </p>
-                <p>• Undertaking Regarding Completion of Adoption Trainings, Fora, Counseling, and Seminars </p>
-
+                <p>• <a href="assets/docs/Adoption_of_a_relative_within_4th_degree/Relative Adoption Proper Checklist.docx">List of Requirement for Joint Adoption by a Step-Parent and the Biological Parent</a></p>
               </div>
 
 
-              <button type="button" class="collapsible">Relative Adoption (Joint adoption by a step parent and biological parent)</button>
+              <button type="button" class="collapsible">Relative Adoption Proper (Adoption of a relative within 4th degree)</button>
               <div class="content">
-                <p>• List of Requirement for Joint Adoption by a Step-Parent and the Biological Parent</p>
+                <p>• <a href="assets/docs/Adoption_of_a_relative_within_4th_degree/Relative Adoption Proper Checklist.docx">List of Requirement for Joint Adoption by a Step-Parent and the Biological Parent</a></p>
               </div>
 
 
