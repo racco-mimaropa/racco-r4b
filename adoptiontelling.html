@@ -77,13 +77,48 @@
 		  flex-grow: 1; /* Makes content expand */
 		}
 
+    .section-separator {
+      position: relative;
+      height: 10px;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      overflow: hidden;
+    }
+    .section-separator::before, .section-separator::after {
+      content: "";
+      position: absolute;
+      width: 200%;
+      height: 100%;
+      top: 0;
+      left: -50%;
+      background: inherit;
+      z-index: -1;
+      animation: wave 5s infinite linear;
+      transform: skewY(-3deg);
+    }
+    .section-separator::after {
+      animation-delay: 2.5s;
+    }
+    @keyframes wave {
+      0% {
+        transform: translateX(0) skewY(-3deg);
+      }
+      100% {
+        transform: translateX(100%) skewY(-3deg);
+      }
+    }
+    .centered-container {
+	    display: flex;
+	    align-items: center;    /* Vertical center */
+	    justify-content: center; /* Horizontal center */
+	    height: 30vh;          /* Full viewport height */
+	  }
 
    </style>
   </head>
   <body>
   	<!-- CONTAINER START -->
   	<div class="container-fluid">
-  		<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+  		<button onclick="topFunction()" id="myBtn" title="Go to top">↑</button>
 
 
   	<!-- Fixed navbar -->
@@ -112,15 +147,15 @@
 		            <a class="nav-link" href="photo.html">Photo Documentation</a>
 		          </li>
 
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="adoptiveDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-						For Adoptive Families
-						</a>
-						<ul class="dropdown-menu" aria-labelledby="adoptiveDropdown">
-							<li><a class="dropdown-item active" href="adoptiontelling.html">Adoption Telling</a></li>
-							<li><a class="dropdown-item" href="requirements.html">Testimionies</a></li>
-						</ul>
-					</li>
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="#" id="adoptiveDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								For Adoptive Families
+								</a>
+								<ul class="dropdown-menu" aria-labelledby="adoptiveDropdown">
+									<li><a class="dropdown-item active" href="adoptiontelling.html">Adoption Telling</a></li>
+									<li><a class="dropdown-item" href="requirements.html">Testimionies</a></li>
+								</ul>
+							</li>
 
 		        </ul>
 		      </div>
@@ -140,7 +175,7 @@
 
 
 	<!-- intro -->
-		<div class="row" style="position: relative; padding:20px 30px;">
+		<div class="row" style="position: relative; padding:20px 30px;" id="sunken-box">
 
 
 		    <div class="col-sm-2" >
@@ -176,47 +211,176 @@
 		    <div class="col-sm-1" >
 		    </div>
 		    <div class="col-sm-10" >
-				<div class="row">
-				  <div class="card" style="background: rgba(255, 255, 255, 0.6); border: none;">
-				    <div class="card-body">
-				    	<div class="row">
-							<div class="col-sm-6">
-								<h5 align="left">Following are the resources which may help you on telling your child is adopted:</h5>
-								<br>
-							</div>
-				    	</div>
-					      <div class="row">
-					        <div class="col-sm-6">
-					          <div class="ratio ratio-16x9">
-					            <iframe src="https://www.youtube.com/embed/d3BdHK3m570" title="Family Bonds" allowfullscreen></iframe>
-					          </div>
-					          	<br>
-					          	<h5 align="center">A fox adopted by geese</h5>
-					            <p align="justify">A family is one who accept you and love you whoever you are. Let us learn how these family of geese handled the situation when their son discovered he was adopted</p>
-					        </div>
-					        <div class="col-sm-6">
-					          <div class="ratio ratio-16x9">
-					            <iframe src="https://www.youtube.com/embed/qvm_bZQOEoQ" title="Kung Fu Panda 2" allowfullscreen></iframe>
-					          </div>
-					          	<h5 align="center">Po finding out he was adopted</h5>
-					            <p align="justify">The importance of honesty in adoption telling. Po, who is already an adult, already knew he was adopted but just needed that verification with his father.</p>
-					        </div>
-					      </div>
-				    </div>
-				  </div>
-				</div>
+
+					<div class="row">
+					  <div class="card" style="background: rgba(255, 255, 255, 0.6); border: none;">
+					    <div class="card-body">
+					    	<div class="row">
+								<div class="col-sm-6">
+									<h5 align="left">Following are the resources which may help you on telling your child is adopted:</h5>
+									<br>
+								</div>
+					    	</div>
+						      <div class="row">
+						        <div class="col-sm-6">
+						          <div class="ratio ratio-16x9">
+						            <iframe src="https://www.youtube.com/embed/d3BdHK3m570" title="Family Bonds" allowfullscreen></iframe>
+						          </div>
+						          	<br>
+						          	<h5 align="center">A FOX ADOPTED BY GEESE</h5>
+						            <p align="justify">A family is one who accept you and love you whoever you are. Let us learn how these family of geese handled the situation when their son discovered he was adopted</p>
+						        </div>
+						        <div class="col-sm-6">
+						          <div class="ratio ratio-16x9">
+						            <iframe src="https://www.youtube.com/embed/qvm_bZQOEoQ" title="Kung Fu Panda 2" allowfullscreen></iframe>
+						          </div>
+						          	<br>
+						          	<h5 align="center">PO FINDING OUT HE WAS ADOPTED</h5>
+						            <p align="justify">The importance of honesty in adoption telling. Po, who is already an adult, already knew he was adopted but just needed that verification with his father.</p>
+						        </div>
+						      </div>
+					    </div>
+					  </div>
+					</div>
+
+					<div class="row">
+					  <div class="card" style="background: rgba(255, 255, 255, 0.6); border: none;">
+					    <div class="card-body">
+					    	<div class="row">
+								<div class="col-sm-6">
+									<br>
+								</div>
+					    	</div>
+						      <div class="row">
+						        <div class="col-sm-6">
+						          <div class="ratio ratio-16x9">
+												<iframe width="562" height="316" src="https://www.youtube.com/embed/wsn-LejVxaM" title="Tarzan - Why Am I So Different" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>						          </div>
+						          	<br>
+						          	<h5 align="center">TARZAN QUESTIONS WHY HE IS DIFFERENT</h5>
+						            <p align="justify">Young Tarzan questions why he is so different with his family. Let us learn how his mother provide him gentle assurance about this.</p>
+						        </div>
+						        <div class="col-sm-6">
+						          <div class="ratio ratio-16x9">
+						            <iframe src="https://drive.google.com/file/d/1uJZrT7DvaR1YiRjdhTEKaQLJeKOvRiEe/view?t=4" title="Kung Fu Panda 2" allowfullscreen></iframe>
+						          </div>
+						          	<br>
+						          	<h5 align="center">A FAMILY SHARES HOW THEY DID THE ADOPTION TELLING</h5>
+						            <p align="justify">A Filipino family how they shared to their daughter her adoption story. This also shows us the importance of using adoption-sensitive words in telling the adoption</p>
+						        </div>
+						      </div>
+					    </div>
+					  </div>
+					</div>
+
 		    </div>
 		   	<div class="col-sm-1" >
 		    </div>
 	  	</div>
 	<!-- videos -->
 
+
+
+	<!-- articles -->
+
+	<!-- ARTICLES ON ADOPTION TELLING -->
+		<p id="adoptforum"></p>
+		<div class="row" style="position: relative; padding:150px 30px;">
+			<!-- Background Blur Overlay -->
+		    <div style="position: absolute; 
+		                top: 0; left: 0; width: 100%; height: 100%;
+		                background-image: url('assets/images/articles.jpg'); 
+		                background-size: cover; 
+		                background-position: center; 
+		                filter: blur(9px);
+		                ">
+		    </div>
+
+		    <div class="col-sm-2" >
+		    </div>
+		    <div class="col-sm-8" >
+
+		    	<div class="row">
+		    		<div class="card" style="background: rgba(255, 255, 255, 0.6);  border: none;" >
+					  <div class="card-body">
+					  	<div class ="row">
+
+						    <div class="col-sm-12" >
+						    	<p></p>
+
+						    	<h1 align="center">ARTICLES ON ADOPTION TELLING</h1>
+
+						      <div class="section-separator"></div>
+									<div class="section-separator"></div>
+
+						    
+						    </div>
+					  	</div>
+
+					  	<div class ="row">
+						    <div class="col-sm-6" >
+						    	<p></p>
+						    	  <div class="centered-container">
+						    			<h3 align="center">WHEN IS THE "RIGHT" TIME TO TELL YOUR CHILD THEY ARE ADOPTED?</h3>
+						    		</div>
+						    </div>
+						    <div class="col-sm-6" >
+						    	<br>
+						    	<p align="justify">Talking about adoption can be tricky, and many new parents wonder when (and how) they should bring the topic up with their child. Yet having age-appropriate conversations about adoption is vital to nurturing a healthy parent-child relationship. It’s important to have a strategy for starting these conversations, even if you’re worried about how your child will react, what they’ll ask you and how it will affect your relationship. There isn’t one right method—your conversations will depend on a number of factors specific to your child and family.</p>
+						    	<p align="justify">In this <a href="https://sites.google.com/nacc.gov.ph/racco-mimaropa/for-adoptive-families/adoption-telling?authuser=1" target="_blank" style="color:red;">article</a>, Dori Fujii, Adoptive Parent Counselor and Post-Adoption Therapist at The Cradle, shares some natural ways to approach these conversations and offers some handy resources that may be helpful for you and your child.</p>
+						    </div>
+						      <div class="section-separator"></div>
+					  	</div>
+
+					  	<div class ="row">
+						    <div class="col-sm-6" >
+						    	<p></p>
+									<div class="centered-container">
+						    		<h3 align="center">WHEN TO TELL A CHILD THEY ARE ADOPTED</h3>
+						    	</div>
+						    </div>
+						    <div class="col-sm-6" >
+						    	<br>
+						    	<p align="justify">Parenting after adoption is a complex process. Talking to your children about how they were adopted is one milestone that adopted families face.1 Experts agree that it is important to have age-appropriate conversations with children about their adoption. While there is no one “right” way to handle this, there are ways that you can approach the conversation to help children process this information.</p>
+						    	<p align="justify">Read more: <a href="https://www.choosingtherapy.com/when-to-tell-a-child-they-are-adopted/" target="_blank" style="color:red;">https://www.choosingtherapy.com/when-to-tell-a-child-they-are-adopted/</a></p>
+						    </div>
+						      <div class="section-separator"></div>
+					  	</div>
+
+					  	<div class ="row">
+						    <div class="col-sm-6" >
+						    	<p></p>
+									<div class="centered-container">
+						    		<h3 align="center">TELLING A CHILD THEIR ADOPTION STORY</h3>
+						    	</div>
+						    </div>
+						    <div class="col-sm-6" >
+						    	<br>
+						    	<p align="left">An adoptive family share how they did the adoption telling:</p>
+						    	<p align="left">1.Creating a life book of your child</p>
+						    	<p align="left">2.Start early and talk often</p>
+						    	<p align="left">3.Request information while you can get it</p>
+						    	<p align="left">Read more here:<a href="https://www.adoptivefamilies.com/talking-about-adoption/talking-about-adoption-story/" target="_blank" style="color: red;"> https://www.adoptivefamilies.com/talking-about-adoption/talking-about-adoption-story/</a></p>
+
+						    </div>
+					  	</div>
+
+					  </div>
+					</div>
+		    	</div>
+		    </div>
+		   	<div class="col-sm-2" >
+		    </div>
+	  	</div>
+	<!-- ARTICLES ON ADOPTION TELLING -->
+
+	<!-- articles -->
+
 	<!-- footer -->
     <footer class="bg-warning text-white text-center text-sm-start">
 
         <!-- Copyright -->
         <div class="text-center p-3 bg-secondary">
-            <p>Innovation made by Regional Alternative Child Care Office - MIMAROPA for adoptive parents. Est. 2025 </p>
+					<p style="font-size: 10px;">Innovation made by Regional Alternative Child Care Office - MIMAROPA for adoptive parents. Est. 2025</p>
         </div>
     </footer>
 
