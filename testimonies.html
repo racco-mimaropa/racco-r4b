@@ -1,0 +1,384 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>RACCO-MIMAROPA</title>
+
+   <style type="text/css">
+
+		 body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+		.w3-bar,h1,button {font-family: "Lato", sans-serif}
+		.fa-anchor,.fa-coffee {font-size:200px}
+
+	   	#sunken-box {
+	    background: white;
+	    border-radius: 0px;
+	    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.3),
+	                inset -5px -5px 10px rgba(255, 255, 255, 0.7);
+	   
+			}
+
+		.semi-transparent-card {
+	    background: rgba(255, 255, 255, 0.3); /* Adjust opacity */
+	    border: none;
+	    box-shadow: none;
+			}
+
+
+		.card {
+		    transition: box-shadow 0.3s ease-in-out;
+			}
+
+		.card:hover {
+		    box-shadow: 0 0 15px rgba(0, 123, 255, 0.75); /* Blue glow effect */
+			}
+
+		#myBtn {
+		  display: none;
+		  position: fixed;
+		  bottom: 20px;
+		  right: 30px;
+		  z-index: 99;
+		  font-size: 18px;
+		  border: none;
+		  outline: none;
+		  background-color: orange;
+		  color: white;
+		  cursor: pointer;
+		  padding: 15px;
+		  border-radius: 4px;
+			}
+
+
+
+		hr {
+		  border: none; /* Remove default border */
+		  height: 10px; /* Adjust thickness */
+		  background-color: red; /* Change color */
+		  margin: 20px 10px; /* Adjust spacing */
+		}
+
+		.card {
+		  display: flex; 
+		  flex-direction: column;
+		  height: 90%; /* Ensures equal height */
+		}
+		.card-body {
+		  flex-grow: 1; /* Makes content expand */
+		}
+
+        .marquee-container {
+            width: 100%;
+            overflow: hidden;
+            white-space: nowrap;
+            background: #fff;
+            padding: 10px 0;
+            position: relative;
+        }
+
+        .marquee {
+            display: inline-block;
+            white-space: nowrap;
+            will-change: transform;
+        }
+
+        /* Marquee animations */
+        @keyframes scrollLeft {
+            from { transform: translateX(100%); }
+            to { transform: translateX(-100%); }
+        }
+
+        @keyframes scrollRight {
+            from { transform: translateX(-100%); }
+            to { transform: translateX(100%); }
+        }
+
+        /* Different styles for each marquee */
+        .marquee-1 { 
+            font-size: 24px; color: #2c3e50; font-family: 'Georgia', serif; 
+            animation: scrollLeft 19s linear infinite; 
+        }
+        .marquee-2 { 
+            font-size: 20px; color: #8e44ad; font-family: 'Verdana', sans-serif; 
+            animation: scrollLeft 11s linear infinite; 
+        }
+        .marquee-3 { 
+            font-size: 22px; color: #e74c3c; font-family: 'Courier New', monospace; 
+            animation: scrollLeft 30s linear infinite; 
+        }
+        .marquee-4 { 
+            font-size: 18px; color: #16a085; font-family: 'Tahoma', sans-serif; 
+            animation: scrollLeft 15s linear infinite; 
+        }
+        .marquee-5 { 
+            font-size: 20px; color: #f39c12; font-family: 'Times New Roman', serif; 
+            animation: scrollLeft 25s linear infinite; 
+        }
+
+
+   </style>
+  </head>
+  <body>
+  	<!-- CONTAINER START -->
+  	<div class="container-fluid">
+  		<button onclick="topFunction()" id="myBtn" title="Go to top">↑</button>
+
+
+  	<!-- Fixed navbar -->
+		<header>
+		  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+		    <div class="container-fluid">
+		    	<a href="racco-" class="navbar-brand">
+			        <img src="assets/images/nacc.png" alt="Logo" style="height: 30px; vertical-align: middle; margin-right: 10px;">
+			        RACCO-MIMAROPA
+			    </a>
+		      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+		        <span class="navbar-toggler-icon"></span>
+		      </button>
+		      <div class="collapse navbar-collapse" id="navbarCollapse">
+		        <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+		          <li class="nav-item">
+		            <a class="nav-link" aria-current="page" href="racco-mimaropa.html">Home</a>
+		          </li>
+		          <li class="nav-item">
+		            <a class="nav-link " href="video_tutorials.html">Video Tutorial</a>
+		          </li>
+		          <li class="nav-item">
+		            <a class="nav-link " href="directory.html">Directory</a>
+		          </li>
+				  <li class="nav-item">
+		            <a class="nav-link" href="photo.html">Photo Documentation</a>
+		          </li>
+
+					<li class="nav-item dropdown">
+					  <a class="nav-link dropdown-toggle" href="#" id="adoptiveDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+					    For Adoptive Families
+					  </a>
+					  <ul class="dropdown-menu" aria-labelledby="adoptiveDropdown">
+					    <li><a class="dropdown-item" href="adoptiontelling.html">Adoption Telling</a></li>
+					    <li><a class="dropdown-item active" href="testimonies.html">Testimionies</a></li>
+					  </ul>
+					</li>
+
+		        </ul>
+		      </div>
+		    </div>
+		  </nav>
+		</header>
+	<!-- Fixed navbar -->
+
+<!-- JUMBOTRON -->
+		<div class="row" style="position: relative; padding:55px 20px;">
+
+
+		    <!-- <div class="col-sm-1"></div> -->
+		    
+		    <div class="col-sm-12" >
+
+
+
+			    <div class="marquee-container">
+			        <div class="marquee marquee-1">“A family shares the same ancestry because we all came from God”</div>
+			    </div>
+
+			    <div class="marquee-container">
+			        <div class="marquee marquee-2">“Adoption gave us a better understanding of what love is all about. A beautiful picture of who God, our Father is”</div>
+			    </div>
+
+			     <h1 style="color: #F0B430; text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;" align="center">Adoptive Families' Testimonies</h1>
+
+			    <div class="marquee-container">
+			        <div class="marquee marquee-3">“Sa pag-ibig, walang kaso kung hindi siya galing sa’yo o hindi mo siya kadugo, ang mahalaga ay ang tunay na pagmamahal na maibibigay namin kanya bilang mga magulang. She’s a gift to us from God”</div>
+			    </div>
+
+			    <div class="marquee-container">
+			        <div class="marquee marquee-4">“If someone becomes a blessing in the family, it is because of grace. Your family also becomes a blessing to them”</div>
+			    </div>
+
+			    <div class="marquee-container">
+			        <div class="marquee marquee-5">“May mga times na nahirapan kami sa proseso dahil sa mga requirements pero natulungan naman kmi ng DSWD na maintindihan ang mga technicalities ng legal adoption. Basta laging aalalahanin ang kapakanan ng bata.”</div>
+			    </div>
+
+		    </div>
+		    
+		    <!-- <div class="col-sm-1"></div> -->
+		</div>
+<!-- JUMBOTRON -->
+
+	<!-- TESTIMONIES -->
+		<div class="row" style="position: relative; padding:20px 30px;" id="sunken-box">
+
+
+		    <div class="col-sm-4" >
+		    	<div class="card" >
+				  <img src="assets/images/testimonies/testi-1.jpg"  style="max-width: 100%; height: auto; display: block;">
+				</div>
+
+		    </div>
+
+		    <div class="col-sm-4" >
+		    	<div class="card" >
+				  <img src="assets/images/testimonies/testi-2.jpg" class="card-img-top" alt="...">
+				</div>
+
+
+		    </div>
+
+		   	<div class="col-sm-4" >
+		   		<div class="card" >
+				  <img src="assets/images/testimonies/testi-3.jpg" class="card-img-top" alt="...">
+				</div>
+
+		    </div>
+	  	</div>
+
+	  	<div class="row" style="position: relative; padding:20px 30px;" >
+
+
+		    <div class="col-sm-4" >
+		    	<div class="card" >
+				  <img src="assets/images/testimonies/testi-4.jpg"  style="max-width: 100%; height: auto; display: block;">
+				</div>
+
+		    </div>
+
+		    <div class="col-sm-4" >
+		    	<div class="card" >
+				  <img src="assets/images/testimonies/testi-5.jpg" class="card-img-top" alt="...">
+				</div>
+
+
+		    </div>
+
+		   	<div class="col-sm-4" >
+		   		<div class="card" >
+				  <img src="assets/images/testimonies/testi-6.jpg" class="card-img-top" alt="...">
+				</div>
+
+
+		    </div>
+	  	</div>
+	  	<div class="row" style="position: relative; padding:20px 30px;" id="sunken-box">
+
+
+		    <div class="col-sm-4" >
+		    	<div class="card" >
+				  <img src="assets/images/testimonies/testi-7.jpg"  style="max-width: 100%; height: auto; display: block;">
+				</div>
+
+		    </div>
+
+		    <div class="col-sm-4" >
+		    	<div class="card" >
+				  <img src="assets/images/testimonies/testi-8.jpg" class="card-img-top" alt="...">
+				</div>
+
+
+		    </div>
+
+		   	<div class="col-sm-4" >
+		   		<div class="card" >
+				  <img src="assets/images/testimonies/testi-9.jpg" class="card-img-top" alt="...">
+				</div>
+
+		    </div>
+	  	</div>
+	<!-- TESTIMONIES -->
+
+
+<!-- RACCO-->
+		<div class="row" >
+
+		    <div class="col-sm-1" >
+		    </div>
+
+		    <div class="col-sm-10" >
+
+		      <div class="row">
+		        <div class="col-sm-6">
+		          <div class="ratio ratio-16x9">
+								<iframe width="562" height="316" 
+								        src="https://drive.google.com/file/d/1dzUXjkuib_n7Soa3PaAI5uNu4_WD0WFz/preview" 
+								        allowfullscreen>
+								</iframe>		  
+
+				   </div>
+		          	<br>
+
+		        </div>
+		        <div class="col-sm-6">
+		          <div class="ratio ratio-16x9">
+		            <iframe src="https://www.youtube.com/embed/Io_B_ztCCbA" title="Kung Fu Panda 2" allowfullscreen></iframe>
+		          </div>
+		          	<br>
+		          	
+		        </div>
+		      </div>
+
+		    </div>
+
+		   	<div class="col-sm-1" >
+		    </div>
+	  	</div>
+<!-- RACCO-->
+
+
+	<!-- Iframe 2 -->
+		<div class="row" style="position: relative; padding:50px 30px;">
+		    <div class="col-sm-1" >
+		    </div>
+		    <div class="col-sm-10" >
+
+
+		    </div>
+		   	<div class="col-sm-1" >
+		    </div>
+	  	</div>
+	<!-- Iframe 2 -->
+
+
+	<!-- footer -->
+    <footer class="bg-warning text-white text-center text-sm-start">
+        <!-- Copyright -->
+        <div class="text-center p-3 bg-secondary">
+			<p style="font-size: 10px;">Innovation made by Regional Alternative Child Care Office - MIMAROPA for adoptive parents. Est. 2025</p>
+        </div>
+    </footer>
+
+	<!-- footer -->
+
+	</div><!--end ng container -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+		<script>
+		// Get the button
+		let mybutton = document.getElementById("myBtn");
+
+		// When the user scrolls down 20px from the top of the document, show the button
+		window.onscroll = function() {scrollFunction()};
+
+		function scrollFunction() {
+		  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+		    mybutton.style.display = "block";
+		  } else {
+		    mybutton.style.display = "none";
+		  }
+		}
+
+		// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+		  document.body.scrollTop = 0;
+		  document.documentElement.scrollTop = 0;
+		}
+		</script>
+
+  </body>
+</html>
