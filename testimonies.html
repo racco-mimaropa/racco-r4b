@@ -77,14 +77,13 @@
             width: 100%;
             overflow: hidden;
             white-space: nowrap;
-            background: #fff;
+/*            background: #fff;*/
             padding: 10px 0;
             position: relative;
         }
 
         .marquee {
             display: inline-block;
-            white-space: nowrap;
             will-change: transform;
         }
 
@@ -101,24 +100,28 @@
 
         /* Different styles for each marquee */
         .marquee-1 { 
-            font-size: 24px; color: #2c3e50; font-family: 'Georgia', serif; 
+            font-size: 24px; color: #FFFFFF; font-family: 'Arial', serif; 
             animation: scrollLeft 19s linear infinite; 
         }
         .marquee-2 { 
-            font-size: 20px; color: #8e44ad; font-family: 'Verdana', sans-serif; 
+            font-size: 20px; color: #F0F0F0; font-family: 'Verdana', sans-serif; 
             animation: scrollLeft 11s linear infinite; 
         }
         .marquee-3 { 
-            font-size: 22px; color: #e74c3c; font-family: 'Courier New', monospace; 
+            font-size: 22px; color: #FFFF99 ; font-family: 'Courier New', monospace; 
             animation: scrollLeft 30s linear infinite; 
         }
         .marquee-4 { 
-            font-size: 18px; color: #16a085; font-family: 'Tahoma', sans-serif; 
+            font-size: 18px; color: #000000; font-family: 'Tahoma', sans-serif; 
             animation: scrollLeft 15s linear infinite; 
         }
         .marquee-5 { 
-            font-size: 20px; color: #f39c12; font-family: 'Times New Roman', serif; 
+            font-size: 27px; color: #A7F3D0; font-family: 'Calibri', serif; 
             animation: scrollLeft 25s linear infinite; 
+        }
+
+        #divrow {
+            background: linear-gradient(45deg, #3498db, #8e44ad);
         }
 
 
@@ -174,14 +177,21 @@
 	<!-- Fixed navbar -->
 
 <!-- JUMBOTRON -->
-		<div class="row" style="position: relative; padding:55px 20px;">
+		<div class="row" id="divrow" >
 
 
 		    <!-- <div class="col-sm-1"></div> -->
 		    
-		    <div class="col-sm-12" >
+		    <!-- <div class="col-sm-12" > -->
 
 
+		    	<br>
+		    	<br>
+		    	<br>
+
+			    <div class="marquee-container">
+			        <div class="marquee marquee-1">“A family shares the same ancestry because we all came from God”</div>
+			    </div>
 
 			    <div class="marquee-container">
 			        <div class="marquee marquee-1">“A family shares the same ancestry because we all came from God”</div>
@@ -205,7 +215,7 @@
 			        <div class="marquee marquee-5">“May mga times na nahirapan kami sa proseso dahil sa mga requirements pero natulungan naman kmi ng DSWD na maintindihan ang mga technicalities ng legal adoption. Basta laging aalalahanin ang kapakanan ng bata.”</div>
 			    </div>
 
-		    </div>
+		    <!-- </div> -->
 		    
 		    <!-- <div class="col-sm-1"></div> -->
 		</div>
