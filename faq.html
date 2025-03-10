@@ -1,0 +1,455 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>RACCO MIMAROPA</title>
+		<link rel="icon" type="image/png" href="assets/images/nacc.png">
+
+
+   <style type="text/css">
+
+		 body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+		.w3-bar,h1,button {font-family: "Lato", sans-serif}
+		.fa-anchor,.fa-coffee {font-size:200px}
+
+	   	#sunken-box {
+	    background: white;
+	    border-radius: 0px;
+	    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.3),
+	                inset -5px -5px 10px rgba(255, 255, 255, 0.7);
+	   
+			}
+
+		.semi-transparent-card {
+	    background: rgba(255, 255, 255, 0.3); /* Adjust opacity */
+	    border: none;
+	    box-shadow: none;
+			}
+
+
+		.card {
+		    transition: box-shadow 0.3s ease-in-out;
+			}
+
+		.card:hover {
+		    box-shadow: 0 0 15px rgba(0, 123, 255, 0.75); /* Blue glow effect */
+			}
+
+		#myBtn {
+		  display: none;
+		  position: fixed;
+		  bottom: 20px;
+		  right: 30px;
+		  z-index: 99;
+		  font-size: 18px;
+		  border: none;
+		  outline: none;
+		  background-color: orange;
+		  color: white;
+		  cursor: pointer;
+		  padding: 15px;
+		  border-radius: 4px;
+			}
+
+		.jumbotron {
+		  border: 3px solid black; /* Add solid border */
+		  border-radius: 10px; /* Optional: Rounded corners */
+		  padding: 15px; /* Ensure spacing inside */
+		}
+
+		hr {
+		  border: none; /* Remove default border */
+		  height: 10px; /* Adjust thickness */
+		  background-color: red; /* Change color */
+		  margin: 20px 10px; /* Adjust spacing */
+		}
+
+		.card {
+		  display: flex; 
+		  flex-direction: column;
+		  height: 90%; /* Ensures equal height */
+		}
+		.card-body {
+		  flex-grow: 1; /* Makes content expand */
+		}
+
+
+   </style>
+  </head>
+  <body>
+  	<!-- CONTAINER START -->
+  	<div class="container-fluid">
+  		<button onclick="topFunction()" id="myBtn" title="Go to top">↑</button>
+
+
+  	<!-- Fixed navbar -->
+		<header>
+		  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+		    <div class="container-fluid">
+		    	<a href="racco-" class="navbar-brand">
+			        <img src="assets/images/nacc.png" alt="Logo" style="height: 30px; vertical-align: middle; margin-right: 10px;">
+			        RACCO MIMAROPA
+			    </a>
+		      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+		        <span class="navbar-toggler-icon"></span>
+		      </button>
+		      <div class="collapse navbar-collapse" id="navbarCollapse">
+		        <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+		          <li class="nav-item">
+		            <a class="nav-link" aria-current="page" href="racco-mimaropa.html">Home</a>
+		          </li>
+		          <li class="nav-item">
+		            <a class="nav-link " href="video_tutorials.html">Video Tutorial</a>
+		          </li>
+		          <li class="nav-item">
+		            <a class="nav-link active" href="faq.html">FAQs</a>
+		          </li>
+		          <li class="nav-item">
+		            <a class="nav-link" href="directory.html">Directory</a>
+		          </li>
+							<li class="nav-item">
+		            <a class="nav-link " href="photo.html">Photos</a>
+		          </li>
+
+							<li class="nav-item dropdown">
+							  <a class="nav-link dropdown-toggle" href="#" id="adoptiveDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							    For Adoptive Families
+							  </a>
+							  <ul class="dropdown-menu" aria-labelledby="adoptiveDropdown">
+							    <li><a class="dropdown-item" href="adoptiontelling.html">Adoption Telling</a></li>
+							    <li><a class="dropdown-item" href="testimonies.html">Testimionies</a></li>
+							  </ul>
+							</li>
+
+		        </ul>
+		      </div>
+		    </div>
+		  </nav>
+		</header>
+	<!-- Fixed navbar -->
+
+
+<!-- JUMBOTRON -->
+		<div class="row" style="position: relative; padding:150px 30px;">
+		    <!-- Background Blur Overlay -->
+		    <div style="position: absolute; 
+		                top: 0; left: 0; width: 100%; height: 100%;
+		                background-image: url('assets/images/racco-mimaropa/faq.jpg'); 
+		                background-size: cover; 
+		                background-position: center; 
+		                filter: blur(7px);
+		                z-index: 0;">
+		    </div>
+
+		    <div class="col-sm-2"></div>
+		    
+		    <div class="col-sm-8" style="position: relative; z-index: 1;">
+		        <h1 style="color: #F0B430; text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;" align="center">Frequently Asked Questions</h1>
+		    </div>
+		    
+		    <div class="col-sm-2"></div>
+		</div>
+<!-- JUMBOTRON -->
+
+	<!-- faq -->
+		<div class="row" style="position: relative; padding:50px 30px;" id="sunken-box">
+		    <div class="col-sm-2" >
+		    </div>
+
+			<div class="col-sm-8" >
+							<br>
+							<br>
+							<!-- accordion-->
+							<div class="accordion accordion-flush" id="accordionFlushExample">
+							  <div class="accordion-item">
+							    <h2 class="accordion-header" id="flush-headingOne" align="center">
+							      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne" align="center">
+							        <strong >I am interested in adoption and would like to learn more about it.</strong>
+							      </button>
+							    </h2>
+							    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+							      <div class="accordion-body">
+							      	<p>All interested individuals or couples are encouraged to attend a pre-adoption forum before they proceed with adoption. This is free and held online via Google Meet every 3rd and 4th Wednesdays of the month. Register and wait for the google meet link to be emailed to you.</p>
+							      	<p>The google meet link will be sent a day before the scheduled forum.</p>
+							      	<p>An evaluation form will be provided to you by the end of the forum. Kindly accomplish the form since this will be our basis in the issuance of certificate of attendance.</p>
+							      	<p><strong><i>No accomplished evaluation form, no certificate of attendance.</i></strong></p>
+							      </div>
+							    </div>
+							  </div>
+							  <div class="accordion-item">
+							    <h2 class="accordion-header" id="flush-headingTwo">
+							      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+							        <strong>What is the cost of adoption?</strong>
+							      </button>
+							    </h2>
+							    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+							      <div class="accordion-body">
+							      	<p>All cost related to the completion of the petition/ application shall be shouldered by the PAPs. Costly requirements are psychological evaluation, newspaper publication and travel expenses of going to our office.</p>
+							      	<p>The RACCO is not yet collecting fees.</p>
+							      </div>
+							    </div>
+							  </div>
+							  <div class="accordion-item">
+							    <h2 class="accordion-header" id="flush-headingThree">
+							      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+							        <strong>How long is the adoption process?</strong>
+							      </button>
+							    </h2>
+							    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+							      <div class="accordion-body">
+							      	<strong>Application Phase</strong>
+							      	<p>If you are a childless couple wanting to adopt through Regular Adoption process, the average duration from the submission up to the approval of application is 1-2 months, provided that there are no additional documents that will be requested by the RACCO.</p>
+							      	<p>However, for Independent Placement cases who already has custody of the child before the effectivity of the law, you need to wait for the child to be declared as legally available for adoption first, prior the application as adoptive parents.</p>
+							      	<br>
+							      	<strong>Matching Process</strong>
+							      	<p>The waiting time to be matched to a child will depend as to your child preference (age, sex, health condition, etc.) Typically, the younger your child preference is, the longer the waiting period to be matched. This is because all children need to go through the process of being declared as legally available for adoption before they can be adopted. This process is needed to ensure that a child to be matched has no longer legal ties with the birth parent/ relative.</p>
+							      	<p>Matching Process may also apply with relative adoption who has less 2 years of custody of the adoptee.</p>
+											<br>
+							      	<strong>Petition phase</strong>
+							      	<p>The duration process from the time of filing of petition up to finality of adoption may take an average of 1 year. Of course, the process may take much faster if the documents are found to be complete in form and substance.</p>
+							      	<p>For adoption cases whose category falls under Relative, Step-parent and Adult Adoption, they will go straight to the filing of petition.</p>
+
+							      </div>
+							    </div>
+							  </div>
+							  <div class="accordion-item">
+							    <h2 class="accordion-header" id="flush-headingFour">
+							      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+							        <strong>What are the requirements and forms/templates?</strong>
+							      </button>
+							    </h2>
+							    <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+							      <div class="accordion-body">
+							      	<p>The requirements will depend on the <a href="racco-mimaropa.html#typeofdomestic">type of adoption</a> you will go through. Check out what type of adoption you are and what are the corresponding list of requirements</p>
+							      	<p>Forms and templates are also included in the list.</p>
+							      </div>
+							    </div>
+							  </div>
+
+							  <div class="accordion-item">
+							    <h2 class="accordion-header" id="flush-headingFive">
+							      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+							        <strong>We already attended the adoption forum, what is our next step?</strong>
+							      </button>
+							    </h2>
+							    <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+							      <div class="accordion-body">
+							      	<strong>For Regular Adoptive Parents</strong>
+							      	<p>Should you decide to proceed with applying as adoptive parent/s after understanding the legal process and consequences of adoption, you may submit a letter of intent to adopt before our office through our official email or seek the assistance of your Local Social Welfare and Development Office (LSWDO).</p>
+							      	<p>Related: <a href="racco-mimaropa.html#appadoptparent">Application as Adoptive Parents</a></p>
+							      	<br>
+							      	<strong>For Relative, Step-parent, and Adult Adoption Cases</strong>
+							      	<p>Kindly approach an adoption social worker from your Local Social Welfare and Development Office (LSWDO) where you reside to avail their services in the preparation of the Social Case Study Report (SCSR).</p>
+							      	<p>Simultaneously, you may already start in the consolidation of all the requirements</p>
+							      	<p>Related: <a href="racco-mimaropa.html#filingpetadminadop">Petition for Administrative Adoption</a></p>
+							      </div>
+							    </div>
+							  </div>
+
+
+							  <div class="accordion-item">
+							    <h2 class="accordion-header" id="flush-headingSix">
+							      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+							        <strong>Where can we secure an Authenticated Copy of Foreign Adoption Law or Certification from relevant Central Authority?</strong>
+							      </button>
+							    </h2>
+							    <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
+							      <div class="accordion-body">
+							      	<p>Foreign PAPs should get first a certified true copy of their country or state’s law on domestic adoption from their government’s official gazette/ publication. Some countries have official website where a certified true copy of the law can be downloaded. Should you find this difficult to obtain, they can consult a lawyer in the Philippines or in their country, whichever is convenient for them.</p>
+							      	<p>Once a certified true copy of the law is obtained, this should be authenticated and apostilled in their country’s department of foreign affairs.</p>
+							      	<p>If the foreign PAPs’ country is a signatory of Hague Apostille Convention, it should be apostilled. If not, it should be authenticated.</p>
+							      	<p><i>There are no exceptions. All foreign PAP/s should exert their earnest efforts in procuring the same.</i></p>
+							      </div>
+							    </div>
+							  </div>
+
+
+							  <div class="accordion-item">
+							    <h2 class="accordion-header" id="flush-headingSeven">
+							      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
+							        <strong>Can we straight register the birth certificate of the child we want to adopt under our names?</strong>
+							      </button>
+							    </h2>
+							    <div id="flush-collapseSeven" class="accordion-collapse collapse" aria-labelledby="flush-headingSeven" data-bs-parent="#accordionFlushExample">
+							      <div class="accordion-body">
+							      	<p>No.</p>
+							      	<p>This is Simulation of Birth, an act of tampering the birth certificate of a child to make it appear that he/she was born to person who is not his/her biological mother, causing the loss of true identity and status of the child.</p>
+							      	<p>Rather than make it easier, there are cases where this act causes problems to the adoptee such as problems in visa applications, government records, and other issues that are more difficult to remedy later on. </p>
+							      	<p>Furthermore, this act is a criminal offense and is punishable under Philippine Laws.</p>
+							      </div>
+							    </div>
+							  </div>
+
+
+							  <div class="accordion-item">
+							    <h2 class="accordion-header" id="flush-headingEight">
+							      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight">
+							        <strong>I am already estranged with my legitimate / marital children and cannot get their written consent. Can I proceed with my adoption without this requirement?</strong>
+							      </button>
+							    </h2>
+							    <div id="flush-collapseEight" class="accordion-collapse collapse" aria-labelledby="flush-headingEight" data-bs-parent="#accordionFlushExample">
+							      <div class="accordion-body">
+							      	<p>No. ln Section 23 of RA 11642, the written consent of the legitimate and adopted child, ten (10) years of age or over, of the adopters is one of the mandatory provisions. Hence, their written consent is necessary for the adoption to proceed.</p>
+							      	<p>If they cannot be contacted, proof of efforts to locate them must be attached in the petition.</p>
+							      	<p><i>Example: returned mail to last known address, certification from the Barangay that they are no longer living in the last known address, radio announcements, newspaper announcement</i></p>
+							      </div>
+							    </div>
+							  </div>
+
+							  <div class="accordion-item">
+							    <h2 class="accordion-header" id="flush-headingNine">
+							      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseNine" aria-expanded="false" aria-controls="flush-collapseNine">
+							        <strong>What documents are needed to be apostilled?</strong>
+							      </button>
+							    </h2>
+							    <div id="flush-collapseNine" class="accordion-collapse collapse" aria-labelledby="flush-headingNine" data-bs-parent="#accordionFlushExample">
+							      <div class="accordion-body">
+							      	<p><b>ALL</b> foreign issued documents must have a corresponding apostille. </p>
+							      	<p>Example: birth certificate, marriage certificate, divorce papers, police clearance issued abroad, employment certificate, etc.</p>
+							      	<p>Note: Foreign issued documents must also have a corresponding licensed translation if not in English language</p>
+							      </div>
+							    </div>
+							  </div>
+
+							  <div class="accordion-item">
+							    <h2 class="accordion-header" id="flush-headingTen">
+							      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTen" aria-expanded="false" aria-controls="flush-collapseTen">
+							        <strong>In which countries do the apostille convention apply?</strong>
+							      </button>
+							    </h2>
+							    <div id="flush-collapseTen" class="accordion-collapse collapse" aria-labelledby="flush-headingTen" data-bs-parent="#accordionFlushExample">
+							      <div class="accordion-body">
+							      	<p>For the updated list of all “Apostille Countries,” please visit this link: <a href="https://www.hcch.net/en/instruments/conventions/status-table/?cid=41" target="_blank">https://www.hcch.net/en/instruments/conventions/status-table/?cid=41</a></p>
+							      
+							      </div>
+							    </div>
+							  </div>
+
+
+							  <div class="accordion-item">
+							    <h2 class="accordion-header" id="flush-headingEleven">
+							      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEleven" aria-expanded="false" aria-controls="flush-collapseEleven">
+							        <strong>Do you have accredited psychologist where we can avail psychological evaluation?</strong>
+							      </button>
+							    </h2>
+							    <div id="flush-collapseEleven" class="accordion-collapse collapse" aria-labelledby="flush-headingEleven" data-bs-parent="#accordionFlushExample">
+							      <div class="accordion-body">
+							      	<p>No, but we do have a <a href="directory.html">list of psychologists</a> where you can choose your service provider. Of course, it is in your discretion should you choose to avail a service of a psychologist outside of the list.</p>
+							      
+							      </div>
+							    </div>
+							  </div>
+
+
+							  <div class="accordion-item">
+							    <h2 class="accordion-header" id="flush-headingTwelve">
+							      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwelve" aria-expanded="false" aria-controls="flush-collapseTwelve">
+							        <strong>Do I need to get the consent of the mother/father of the child we want to adopt?</strong>
+							      </button>
+							    </h2>
+							    <div id="flush-collapseTwelve" class="accordion-collapse collapse" aria-labelledby="flush-headingTwelve" data-bs-parent="#accordionFlushExample">
+							      <div class="accordion-body">
+							      	<p>If the child was born out of non-marital relationship, the consent of the biological mother is required but the consent of the biological father is not mandatory. </p>
+							      	<p>If the child is a marital child of his/her parents, both consent of the father and mother is required.</p>
+							      	<p>If the adoptee is already an adult, consent of the parents is no longer required.</p>
+							      	<p>If they cannot be contacted, proof of efforts to locate them must be attached in the petition <i>(Example: returned mail to last known address, certification from the Barangay that they are no longer living in the last known address, radio announcements, newspaper announcement)</i></p>
+							      
+							      </div>
+							    </div>
+							  </div>
+
+
+
+							</div>
+
+							<!-- accordion-->
+	
+			</div>
+
+			<div class="col-sm-2" >
+			</div>
+	  </div>
+	<!-- faq -->
+
+<!-- Need for Help -->
+		<div class="row" style="position: relative; padding:150px 30px;">
+			<!-- Background Blur Overlay -->
+		    <div style="position: absolute; 
+		                top: 0; left: 0; width: 100%; height: 100%;
+		                background-image: url('assets/images/question.jpg'); 
+		                background-size: cover; 
+		                background-position: center; 
+		                filter: blur(13px);
+		                ">
+		    </div>
+
+		    <div class="col-sm-2" >
+		    </div>
+		    <div class="col-sm-8" >
+
+		    	<div class="row">
+		    		<div class="card" style="background: rgba(255, 255, 255, 0.6);  border: none;" >
+					  <div class="card-body">
+					  	<div class ="row">
+
+								<div class="col-sm-12 d-flex justify-content-center align-items-center text-white" 
+								     style="background: url('assets/images/faq/faq-bot.jpg') center/cover no-repeat; height: 300px;">
+								</div>
+
+					  	</div>
+					  </div>
+					</div>
+		    	</div>
+		    </div>
+		   	<div class="col-sm-2" >
+		    </div>
+	  	</div>
+	<!-- Need for Help -->
+
+
+	<!-- footer -->
+    <footer class="bg-warning text-white text-center text-sm-start">
+
+        <!-- Copyright -->
+        <div class="text-center p-3 bg-secondary">
+					<p style="font-size: 10px;">Innovation made by Regional Alternative Child Care Office - MIMAROPA for adoptive parents. Est. 2025</p>
+        </div>
+    </footer>
+
+	<!-- footer -->
+
+	</div><!--end ng container -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+		<script>
+		// Get the button
+		let mybutton = document.getElementById("myBtn");
+
+		// When the user scrolls down 20px from the top of the document, show the button
+		window.onscroll = function() {scrollFunction()};
+
+		function scrollFunction() {
+		  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+		    mybutton.style.display = "block";
+		  } else {
+		    mybutton.style.display = "none";
+		  }
+		}
+
+		// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+		  document.body.scrollTop = 0;
+		  document.documentElement.scrollTop = 0;
+		}
+		</script>
+
+  </body>
+</html>

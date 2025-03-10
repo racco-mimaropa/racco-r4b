@@ -3,12 +3,15 @@
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=-1">
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <title>RACCO-MIMAROPA</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+
+    <title>Portal RACCO MIMAROPA</title>
 
    <style type="text/css">
 
@@ -40,126 +43,22 @@
       }
 
     #myBtn {
-      display: none;
-      position: fixed;
-      bottom: 20px;
-      right: 30px;
-      z-index: 99;
-      font-size: 18px;
-      border: none;
-      outline: none;
-      background-color: orange;
-      color: white;
-      cursor: pointer;
-      padding: 15px;
-      border-radius: 4px;
-      }
-
-
-
-    hr {
-      border: none; /* Remove default border */
-      height: 10px; /* Adjust thickness */
-      background-color: red; /* Change color */
-      margin: 20px 10px; /* Adjust spacing */
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: orange;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
     }
 
-    .card {
-      display: flex; 
-      flex-direction: column;
-      height: 90%; /* Ensures equal height */
-    }
-    .card-body {
-      flex-grow: 1; /* Makes content expand */
-    }
 
-    #divbody {
-            background: linear-gradient(to bottom, #87CEEB, #ffffff); /* Sky blue to white */
-            font-family: Arial, sans-serif;
-            overflow-x: hidden;
-/*            height: 100vh;*/
-            position: relative;
-        }
-
-        /* Moving clouds */
-        .cloud-container {
-            position: absolute;
-            top: 0;
-            left: 0;
-/*            width: 100%;
-            height: 100vh;*/
-            overflow: hidden;
-            pointer-events: none;
-        }
-
-        .cloud {
-            position: absolute;
-            width: 200px;
-            height: 100px;
-            background: rgba(255, 255, 255, 0.8);
-            border-radius: 50%;
-            box-shadow: 30px 30px 20px rgba(255, 255, 255, 0.5);
-            opacity: 0.8;
-        }
-
-        .cloud-1 {
-            top: 10%;
-            left: -200px;
-            animation: cloudMove 20s linear infinite;
-        }
-
-        .cloud-2 {
-            top: 40%;
-            left: -300px;
-            animation: cloudMove 25s linear infinite reverse;
-        }
-
-        .cloud-3 {
-            top: 70%;
-            left: -250px;
-            animation: cloudMove 30s linear infinite;
-        }
-
-        @keyframes cloudMove {
-            from { transform: translateX(-200px); }
-            to { transform: translateX(100vw); }
-        }
-
-        .marquee-container {
-            width: 100%;
-            overflow: hidden;
-            white-space: nowrap;
-            background: rgba(255, 255, 255, 0.0); /* Semi-transparent */
-            padding: 10px 0;
-            position: relative;
-            border-radius: 10px;
-            margin: 20px 0;
-            text-align: center;
-        }
-
-        .marquee {
-            display: inline-block;
-            white-space: nowrap;
-            will-change: transform;
-        }
-
-        /* Marquee animations */
-        @keyframes scrollLeft {
-            from { transform: translateX(100%); }
-            to { transform: translateX(-100%); }
-        }
-
-        @keyframes scrollRight {
-            from { transform: translateX(-100%); }
-            to { transform: translateX(100%); }
-        }
-
-        /* Different text styles */
-        .marquee-1 { font-size: 24px; color: #2c3e50; font-family: 'Georgia', serif; animation: scrollLeft 10s linear infinite; }
-        .marquee-2 { font-size: 20px; color: #8e44ad; font-family: 'Verdana', sans-serif; animation: scrollRight 8s linear infinite; }
-        .marquee-3 { font-size: 22px; color: #e74c3c; font-family: 'Courier New', monospace; animation: scrollLeft 6s linear infinite; }
-        .marquee-4 { font-size: 18px; color: #16a085; font-family: 'Tahoma', sans-serif; animation: scrollRight 9s linear infinite; }
-        .marquee-5 { font-size: 20px; color: #f39c12; font-family: 'Times New Roman', serif; animation: scrollLeft 7s linear infinite; }
    </style>
   </head>
   <body>
@@ -172,9 +71,9 @@
     <header>
       <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
         <div class="container-fluid">
-          <a href="racco-" class="navbar-brand">
+          <a href="#" class="navbar-brand">
               <img src="assets/images/nacc.png" alt="Logo" style="height: 30px; vertical-align: middle; margin-right: 10px;">
-              RACCO-MIMAROPA
+              Portal RACCO MIMAROPA
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -182,27 +81,30 @@
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav ms-auto mb-2 mb-md-0">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="racco-mimaropa.html">Home</a>
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link " href="video_tutorials.html">Video Tutorial</a>
+                <a class="nav-link" href="video_tutorials.html">Video Tutorial</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link " href="directory.html">Directory</a>
+                <a class="nav-link" href="faq.html">FAQs</a>
               </li>
-          <li class="nav-item">
-                <a class="nav-link" href="photo.html">Photo Documentation</a>
+              <li class="nav-item">
+                <a class="nav-link" href="directory.html">Directory</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="photo.html">Photos</a>
               </li>
 
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="adoptiveDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              For Adoptive Families
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="adoptiveDropdown">
-              <li><a class="dropdown-item" href="adoptiontelling.html">Adoption Telling</a></li>
-              <li><a class="dropdown-item active" href="testimonies.html">Testimionies</a></li>
-            </ul>
-          </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="adoptiveDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  For Adoptive Families
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="adoptiveDropdown">
+                  <li><a class="dropdown-item" href="adoptiontelling.html">Adoption Telling</a></li>
+                  <li><a class="dropdown-item" href="testimonies.html">Testimionies</a></li>
+                </ul>
+              </li>
 
             </ul>
           </div>
@@ -211,158 +113,898 @@
     </header>
   <!-- Fixed navbar -->
 
-<!-- JUMBOTRON -->
-    <div class="row" style="position: relative; padding:55px 20px;">
+  <!-- JUMBOTRON -->
+    <div class="row">
+      <div class="col-sm-12" style="padding:150px 30px; background-image: url('assets/images/racco-mimaropa/unity.jpg'); background-size: cover; background-position: center;">
+        <h1  style="color: #F0B430; text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;" align="center">PORTAL FOR ADOPTIVE PARENTS</h1>
 
+        <h5  style="color: #F0B430; text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;" align="center">Adoptive parents' guide on Philippine Domestic Administrative Adoption</h5>
 
-        <!-- <div class="col-sm-1"></div> -->
-        
-        <div class="col-sm-12" id="divbody">
-
-
-          <!-- Floating Clouds -->
-          <div class="cloud-container">
-              <div class="cloud cloud-1"></div>
-              <div class="cloud cloud-2"></div>
-              <div class="cloud cloud-3"></div>
-          </div>
-
-          <!-- Marquee Messages -->
-          <div class="marquee-container">
-              <div class="marquee marquee-1">“A family shares the same ancestry because we all came from God”</div>
-          </div>
-
-          <div class="marquee-container">
-              <div class="marquee marquee-2">“Adoption gave us a better understanding of what love is all about. A beautiful picture of who God, our Father is”</div>
-          </div>
-
-          <div class="marquee-container">
-              <div class="marquee marquee-3">“Sa pag-ibig, walang kaso kung hindi siya galing sa’yo o hindi mo siya kadugo, ang mahalaga ay ang tunay na pagmamahal na maibibigay namin kanya bilang mga magulang. She’s a gift to us from God”</div>
-          </div>
-
-          <div class="marquee-container">
-              <div class="marquee marquee-4">“If someone becomes a blessing in the family, it is because of grace. Your family also becomes a blessing to them”</div>
-          </div>
-
-          <div class="marquee-container">
-              <div class="marquee marquee-5">“May mga times na nahirapan kami sa proseso dahil sa mga requirements pero natulungan naman kmi ng DSWD na maintindihan ang mga technicalities ng legal adoption. Basta laging aalalahanin ang kapakanan ng bata.”</div>
-          </div>
-
-        </div>
-        
-        <!-- <div class="col-sm-1"></div> -->
+      </div>
     </div>
-<!-- JUMBOTRON -->
+  <!-- JUMBOTRON -->
+ 
+  <!-- CARDS -->
+    <div class="row" id="sunken-box">
 
-  <!-- TESTIMONIES -->
-    <div class="row" style="position: relative; padding:20px 30px;" id="sunken-box">
-
-
-        <div class="col-sm-4" >
-          <div class="card" >
-          <img src="assets/images/testimonies/testi-1.jpg"  style="max-width: 100%; height: auto; display: block;">
+      <div class="row">
+        <div class="col-sm-2">
         </div>
-
+        <div class="col-sm-8">
+          <br>
+          <br>
+          <br>
+          <h2 align="center">Get help on the following topics</h2>
         </div>
-
-        <div class="col-sm-4" >
-          <div class="card" >
-          <img src="assets/images/testimonies/testi-2.jpg" class="card-img-top" alt="...">
-        </div>
-
-
-        </div>
-
-        <div class="col-sm-4" >
-          <div class="card" >
-          <img src="assets/images/testimonies/testi-3.jpg" class="card-img-top" alt="...">
-        </div>
-
-
+        <div class="col-sm-2">
         </div>
       </div>
-      <div class="row" style="position: relative; padding:20px 30px;" id="sunken-box">
 
-
-        <div class="col-sm-4" >
-          <div class="card" >
-          <img src="assets/images/testimonies/testi-1.jpg"  style="max-width: 100%; height: auto; display: block;">
-        </div>
-
-        </div>
-
-        <div class="col-sm-4" >
-          <div class="card" >
-          <img src="assets/images/testimonies/testi-2.jpg" class="card-img-top" alt="...">
-        </div>
-
-
-        </div>
-
-        <div class="col-sm-4" >
-          <div class="card" >
-          <img src="assets/images/testimonies/testi-3.jpg" class="card-img-top" alt="...">
-        </div>
-
-
-        </div>
+      <div class="col-sm-1" >
       </div>
-  <!-- TESTIMONIES -->
+      <div class="col-sm-10" >
+        <br>
+        <div class="row">
+
+          <div class="col-sm-2" >
+            <!--1stcard-->
+            <div class="card h-100" >
+                <a href="#typeofdomestic" ><img src="assets/images/racco-mimaropa/typesofadopt.jpg" alt="Card Image 1" style="width:100%; height: 200px; object-fit: cover;"></a>
+              <div class="card-body">
+                <p align="center"><a href="#typeofdomestic" class="card-link" style="color: black; text-decoration: none;" >Types of Domestic Adoption</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-2" >
+            <!--2ndcard-->
+            <div class="card h-100" >
+              <a href="video_tutorials.html" ><img src="assets/images/racco-mimaropa/fillup.jpg" alt="Card Image 1" style="width:100%; height: 200px; object-fit: cover;"></a>
+              <div class="card-body">
+                
+                <p align="center"><a href="video_tutorials.html" class="card-link" style="color: black; text-decoration: none;">How to fill up Forms</a></p>
+      
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-2" >
+            <!--3rdcard-->
+            <div class="card h-100" >
+              <a href="#appadoptparent"><img src="assets/images/racco-mimaropa/regadopparent.jpg" alt="Card Image 2" style="width:100%; height: 200px; object-fit: cover;"></a>
+              <div class="card-body">
+                <p align="center"><a href="#appadoptparent" class="card-link" style="color: black; text-decoration: none;">How to apply as Regular Adoptive Parents</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-2" >
+            <!--4thcard-->
+            <div class="card h-100" >
+              <a href="#filingpetadminadop"><img src="assets/images/racco-mimaropa/fostercare.jpg" alt="Card Image 3" style="width:100%; height: 200px; object-fit: cover;"></a>
+              <div class="card-body">
+                <p align="center"><a href="#filingpetadminadop" class="card-link" style="color: black; text-decoration: none;">How to file Petition for Administrative Adoption</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-2" >
+            <!--5thcard-->
+            <div class="card h-100" >
+              <a href="#sibra"><img src="assets/images/racco-mimaropa/sibra.jpeg" alt="Card Image 3" style="width:100%; height: 200px; object-fit: cover;"></a>
+              <div class="card-body">
+                <p align="center"><a href="#sibra" class="card-link" style="color: black; text-decoration: none;">How to file Petition for Rectification of Simulated Birth (RA 11222)</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-2" >
+            <!--6thcard-->
+            <div class="card h-100" >
+                      <a href="faq.html"><img src="assets/images/racco-mimaropa/faq.jpg" alt="Card Image 3" style="width:100%; height: 200px; object-fit: cover;"></a>
+              <div class="card-body">
+                <p align="center"><a href="faq.html" class="card-link" style="color: black; text-decoration: none;">Frequently Asked Question</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-sm-1" >
+      </div>
+      <p></p>
+    </div>
+  <!-- CARDS -->
+
+  <!-- Types of Domestic Adoption -->
+    <p id="typeofdomestic"></p>
+    <div class="row" style="position: relative; padding:150px 30px;">
+        <!-- Background Blur Overlay -->
+        <div style="position: absolute; 
+                    top: 0; left: 0; width: 100%; height: 100%;
+                    background-image: url('assets/images/racco-mimaropa/typesofadopt.jpg'); 
+                    background-size: cover; 
+                    background-position: center; 
+                    filter: blur(13px);
+                    z-index: -1;">
+        </div>
+
+        <div class="col-sm-1">
+          
+        </div>
+
+        <div class="col-sm-10">
+          <div class="card" style="background: rgba(255, 255, 255, 0.6);  border: none;" >
+            <div class="card-body">
 
 
+              <div class="row">
+                  <div class="col-sm-5">
 
-  <!-- Iframe 1 -->
-    <div class="row" style="position: relative; padding:50px 30px;">
+                    <!-- Parallel Lines -->
+                    <div style="display: flex; flex-direction: column; gap: 5px; margin: 10px 0;">
+                      <hr style="width: 100%; border: 1px solid #ccc; margin: 0;">
+                      <hr style="width: 100%; border: 1px solid #ccc; margin: 0;">
+                    </div>
+                    <h1 align="center">TYPES OF DOMESTIC ADOPTION</h1>
+                                        
+                    <!-- Parallel Lines -->
+                    <div style="display: flex; flex-direction: column; gap: 5px; margin: 10px 0;">
+                      <hr style="width: 100%; border: 1px solid #ccc; margin: 0;">
+                      <hr style="width: 100%; border: 1px solid #ccc; margin: 0;">
+                    </div>
+                  </div>
+                  <div class="col-sm-7">
+
+              <!-- accordion-->
+              <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingOne" align="center">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne" align="center">
+                      <strong >Regular or Adoption of a Legally Available Child</strong>
+                    </button>
+                  </h2>
+                  <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      <p>This pertains to the adoption of a non-relative child who has been issued with a Certification Declaring a Child as Legally Available for Adoption (CDCLAA). This also covers the case of a non-relative foster child who will be adopted by his or her foster parent. Regular adoptive parents must go through the application process, matching process and petition process.</p>
+                      <p>Related: <a href="#appadoptparent"> Application as Prospective Adoptive Parents</a></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                      <strong>Step-parent adoption</strong>
+                    </button>
+                  </h2>
+                  <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">This pertains to the adoption of a legitimate child of one spouse by the other spouse or the step-parent (Example: Child AA was the legitimate child of BB and CC. However, CC died and later on BB married DD. DD wants to adopt AA through step-parent adoption)</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                      <strong>Relative Adoption</strong>
+                    </button>
+                  </h2>
+                  <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      <p>There are different subcategories of relative adoption:</p>
+                      <p>•<strong>Relative adoption proper</strong> - adoption of a child within the 4th degree of consanguinity or affinity</p>
+                      <p>•<strong>Adoption of own non-marital child</strong> - this refers to the case wherein an individual or couple would like to adopt their own child who born before they were married. Through this, the status of the child will be elevated from illegitimate to legitimate.</p>
+                      <p>•<strong>Joint adoption of a biological parent and step-parent</strong> - this refers when a person or individual had a non-marital child and later on got married to a person who is not the child's biological mother/father. The biological parent and step-parent will jointly adopt the child in order to lift the child's status from illegitimate to legitimate.</p>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseThree">
+                      <strong>Adult Adoption</strong>
+                    </button>
+                  </h2>
+                  <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      <p> Covers the adoption of a Filipino of legal age, who prior to the adoption, has been consistently considered and treated by the adopters as their own child prior to reaching the age of eighteen (18) for at least three (3) years prior to the filing of the petition.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- accordion-->
+                  </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-1"></div>
+    </div>
+
+  <!-- Types of Domestic Adoption -->
+
+  <!-- SOCIALS -->
+    <p id="socials"></p>
+    <div class="row" style="position: relative; padding:150px 30px;">
+      <!-- Background Blur Overlay -->
+        <div style="position: absolute; 
+                    top: 0; left: 0; width: 100%; height: 100%;
+                    background-image: url('assets/images/racco-mimaropa/socials.jpg'); 
+                    background-size: cover; 
+                    background-position: center; 
+                    filter: blur(13px);
+                    ">
+        </div>
+
         <div class="col-sm-1" >
         </div>
         <div class="col-sm-10" >
 
+          <div class="row">
+            <div class="card" style="background: rgba(255, 255, 255, 0.6);  border: none;" >
+            <div class="card-body">
+              <div class ="row">
+
+                <div class="col-sm-12" >
+                  <p></p>
+
+                  <h1 align="center">Socials <i class="bi bi-chat-dots-fill"></i></h1>
+
+                  <!-- Parallel Lines -->
+                  <div style="display: flex; flex-direction: column; gap: 5px; margin: 10px 0;">
+                    <hr style="width: 100%; border: 1px solid #ccc; margin: 0;">
+                    <hr style="width: 100%; border: 1px solid #ccc; margin: 0;">
+                  </div>
+
+                  <div class="row">
+                    <div class="col-sm-4">
+
+                      <div class="card bg-light text-dark" >
+                        <div class="card-body">
+                          <img src="assets/images/racco-mimaropa/mimaropa.png"  style="max-width: 100%; height: auto; display: block;">
+                          <br>
+                          <p align="center">Follow us on Facebook</p>
+                          <a type="button" class="btn btn-primary w-100 btn-sm" href="video_tutorials.html">Facebook</a>
+                        </div>
+                      </div>
+
+                    </div>
+                    <div class="col-sm-4">
+                      
+                      <div class="card bg-light text-dark" >
+                        <div class="card-body">
+                          <img src="assets/images/racco-mimaropa/forum.jpg"  style="max-width: 102%; height: auto; display: block;">
+                          <br>
+                          <p align="center">Register to pre-adoption forum</p>
+                          <a type="button" class="btn btn-danger w-100 btn-sm" href="https://docs.google.com/forms/d/e/1FAIpQLSc8Tfdh-6cgjBjdpfvSr3RcU9sGUY0g40_vzoZnBz_pPwW17Q/viewform" target="_blank">Facebook</a>
+                        </div>
+
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                      
+                      <div class="card bg-light text-dark" >
+                        <div class="card-body">
+                          <img src="assets/images/racco-mimaropa/adopsuppgroup.jpg"  style="max-width: 100%; height: auto; display: block;">
+                          <br>
+                          <p align="center">Be part of Adoption Support Group</p>
+                          <a type="button" class="btn btn-warning w-100 btn-sm" href="https://www.facebook.com/groups/890849696174298/?rdid=CUZWXx7U10dXM0Mf&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2Fg%2F1ByCdqVnUh%2F#" target="_blank">Support Group</a>
+                        </div>
+                      </div>
+                    </div>
+                    
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
         </div>
         <div class="col-sm-1" >
         </div>
       </div>
-  <!-- Iframe 1 -->
+  <!-- SOCIALS -->
 
 
-<!-- RACCO-->
-    <div class="row" >
+  <!-- APPLICATION AS ADOPTIVE PARENTS -->
+    <p id="appadoptparent"></p>
+    <div class="row" style="position: relative; padding:150px 30px;">
+      <!-- Background Blur Overlay -->
+        <div style="position: absolute; 
+                    top: 0; left: 0; width: 100%; height: 100%;
+                    background-image: url('assets/images/racco-mimaropa/regadopparent.jpg'); 
+                    background-size: cover; 
+                    background-position: center; 
+                    filter: blur(13px);
+                    ">
+        </div>
 
         <div class="col-sm-1" >
         </div>
-
         <div class="col-sm-10" >
 
+          <div class="row">
 
+            <div class="card" style="background: rgba(255, 255, 255, 0.6);  border: none;" >
+            <div class="card-body">
+              <div class ="row">
 
+                <div class="col-sm-5" >
+                  <p></p>
+                    <h1 align="center">APPLICATION AS ADOPTIVE PARENTS</h1>
+                     <!-- Parallel Lines -->
+                  <div style="display: flex; flex-direction: column; gap: 5px; margin: 10px 0;">
+                    <hr style="width: 100%; border: 1px solid #ccc; margin: 0;">
+                    <hr style="width: 100%; border: 1px solid #ccc; margin: 0;">
+                  </div>
+                  <p align="justify">Are you a childless couple or interested in legal adoption of a child not your blood? You may apply as Prospective Adoptive Parents for you to be matched to a child</p>
+
+                </div>
+
+                <div class="col-sm-7" >
+
+                  <!-- Parallel Lines -->
+                  <div style="display: flex; flex-direction: column; gap: 5px; margin: 10px 0;">
+                    <hr style="width: 100%; border: 1px solid #ccc; margin: 0;">
+                    <hr style="width: 100%; border: 1px solid #ccc; margin: 0;">
+                  </div>
+
+                    <p>Things to consider before adopting:</p>
+                    <ol align="justify">
+                      <li><b><u>READINESS TO ADOPT.</u></b> Adoption is permanent. This means that once you go through this process, you may not return a child to his/ her biological family. Furthermore, each child for adoption has unique history. They may come from a family with history of abuse, drug use, disability, mental health issues, or if the child is abandoned, family history may be not known. Hence, you need to be prepared in addressing possible challenges in parenting an adopted child.</li>
+                      <li><b><u>COST OF ADOPTION.</u></b> Through administrative adoption, the adoption process was made simpler and less costly. However, this does not mean you will not incur expenses. You still need to prepare financially especially in obtaining the necessary documents </li>
+                      <li><b><u>AGE OF THE CHILD.</u></b> In Philippine laws, a child needs to be declared as legally available for adoption first, before they can be matched to an adoptive family. This process may take from months to years. Hence, if you want to adopt an infant or younger child, the waiting time to be matched to a younger child may be longer compared when you adopt a much older child. </li>
+                    </ol> 
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-success w-100 btn-sm" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                  STEPS IN APPLYING AS PROSPECTIVE ADOPTIVE PARENTS
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                    <p><b>STEPS IN APPLYING AS PROSPECTIVE ADOPTIVE PARENTS</b></p>
+
+                              <ol >
+                                <li>Attend a pre-adoption forum.</li>
+                                <li>Seek assistance of an adoption social worker. An adoption social worker may come from your Local Social Welfare and Development Office (LSWDO) where you reside or respective Regional Alternative Child Care Office (RACCO)</li>
+                                <li>Submit a Letter of intent on adoption.</li>
+                                <li>If initially assessed to be qualified, complete the required documents.</li>
+                                <li>Undergo interviews and assessments. Your social worker may conduct in-person or telephone interviews to you, your family and other relevant persons.</li>
+                                <li>Submit application with complete supporting documents to RACCO.</li>
+                                <li>Appear to the Regional Child Placement Committee (RCPC). RACCO will send an invitation letter for you to appear before the RCPC. The RCPC is a group of specialists who will interview you and deliberate whether to approve or deny your application as Prospective Adoptive Parent. This may be done via online or in-person.</li>
+                                <li>Wait for the results of the application. If approved, you will receive a communication and will be included in the roster of approved Prospective Adoptive Parents</li>
+                                <li>Wait to be matched to a child within your preference.</li>
+                                <li>Once matched, a communication will be sent to you pertaining to the results and child matched to you. Prospective Adoptive Parent/s will be given time to decide to accept or not the results of the matching.</li>
+                                <li>Send your letter of acceptance or non-acceptance of the results.</li>
+                                <li>Go to the Child Caring Agency for the physical entrustment of the child. If you accepted, a schedule will be set for the placement of the child with you. You will need to go directly where the child is. Some Child Caring Agency may require you to spend 1-2 nights in the agency or around the area to help the child adjust before he/she be placed/ entrusted with you.</li>
+                                <li>Complete six (6) months of Supervised Trial Custody. After the placement, your adoption social worker will oversee the adjustment between you and the child. After thorough assessment of satisfactory adjustment where bond and rapport have taken place, your social worker will recommend for you to proceed with filing a petition for administrative adoption.  </li>
+
+                              </ol>
+
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <br>
+                <br>
+                <p>Click <a href="https://docs.google.com/document/d/19ayyUN_bOnk-L-lK1y2fnETmCarqhNuh/edit?usp=sharing&ouid=111927596376327155181&rtpof=true&sd=true" target="_blank">here</a> for the list of requirements and templates</p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
         </div>
-
         <div class="col-sm-1" >
         </div>
       </div>
-<!-- RACCO-->
+  <!-- APPLICATION AS ADOPTIVE PARENTS -->
+
+  <!-- FILING A PETITION FOR ADMINISTRATIVE ADOPTION -->
+    <p id="filingpetadminadop"></p>
+    <div class="row" style="position: relative; padding:150px 30px;">
+      <!-- Background Blur Overlay -->
+        <div style="position: absolute; 
+                    top: 0; left: 0; width: 100%; height: 100%;
+                    background-image: url('assets/images/racco-mimaropa/fostercare.jpg'); 
+                    background-size: cover; 
+                    background-position: center; 
+                    filter: blur(13px);
+                    z-index: -1;">
+        </div>
+
+        <div class="col-sm-2" >
+        </div>
+        <div class="col-sm-8" >
+
+          <div class="row">
+            <div class="card" style="background: rgba(255, 255, 255, 0.6);  border: none;" >
+            <div class="card-body">
+              <div class ="row">
+
+                <div class="col-sm-5" >
+                <div class="jumbotron jumbotron-fluid">
+                  <div class="container">
+                    <h2  align="left">FILING A PETITION FOR ADMINISTRATIVE ADOPTION</h2>
+                  </div>
+                </div>
+                </div>
+
+                <div class="col-sm-7" >
+
+                  <!-- Parallel Lines -->
+                  <div style="display: flex; flex-direction: column; gap: 5px; margin: 10px 0;">
+                    <hr style="width: 100%; border: 1px solid #ccc; margin: 0;">
+                    <hr style="width: 100%; border: 1px solid #ccc; margin: 0;">
+                  </div>
+                  <p align="justify">The filing of petition for adoption was before done in court. However, with the passage of Republic Act 11642 last 2022, adopters no need to hire a lawyer nor go through the judicial process of adoption.</p>
+                   <p align="justify">Prospective Adoptive Parents (PAPs) who would like to adopt a child who is their relative or step-child will go straight in Filing a Petition for Administrative Adoption. The same goes to people who would like to adopt an adult person that they considered their own since he/she was still a minor.</p>
+                  <p align="justify">For PAPs who went through the application process and was matched to a child legally available for adoption, you will need to file a petition in order to legalize and finalize the adoption of the child.</p>
+
+                  <div class ="row">
+                    <div class="col-sm-6" >
+                      <!-- Button trigger modal -->
+                      <button type="button" class="btn btn-warning w-100 btn-sm" data-bs-toggle="modal" data-bs-target="#staticBackdrop1">
+                        STEPS PRIOR THE FILING OF PETITION
+                      </button>
+
+                      <!-- Modal -->
+                      <div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                              <h5><b>STEPS PRIOR THE FILING OF PETITION</b></h5>
+                              <p><b>For relative, step-parent and adult adoption:</b></p>
+                              <ol >
+                                <li>Attend a pre-adoption forum</li>
+                                <li>Avail the services of an adoption social worker. An adoption social worker may come from your Local Social Welfare and Development Office (LSWDO) where you reside or respective Regional Alternative Child Care Office (RACCO)</li>
+                                <li>Submit a Letter of intent on adoption.</li>
+                                <li>If assessed to be qualified, obtain the required documents</li>
+                                <li>Undergo assessment and interviews to be conducted by the adoption social worker</li>
+                                <li>Prepare petition with supporting documents</li>
+                              </ol>
+                              <p><b>For regular prospective adoptive parents adopting a child legally available for adoption:</b></p>
+                              <ol >
+                                <li>All your original documents submitted to RACCO will be returned in order for you to re-use them in the filing of petition.</li>
+                                <li>Update expired documents and ask for your adoption social worker to give an updated Social Case Study Report</li>
+                                <li>Prepare petition with supporting documents</li>
+                              </ol>
+
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                    <div class="col-sm-6" >
+
+                      <!-- Button trigger modal -->
+                      <button type="button" class="btn btn-secondary w-100 h-100 btn-sm" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">
+                        FILING OF PETITION
+                      </button>
+
+                      <!-- Modal -->
+                      <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                              <p><b>FILING OF PETITION</b></p>
+                              <ol >
+                                <li>File or submit your Notarized Petition for Administrative Adoption along with complete supporting documents to Regional Alternative Child Care Office (RACCO). This may done through mail/ in-person submission</li>
+                                <li>Wait for acknowledgement or comments from RACCO.</li>
+                                <li>If found complete in documents, RACCO will will issue an Order informing you of the schedule and place of Mandatory Appearance and directing you to publish the said Order in a newspaper of general circulation once a week for three (3) consecutive weeks</li>
+                                <li>Secure Affidavit of Publication from the newspaper company and copies of the newspaper. Submit to RACCO. Submission may be done through courier to in-person during the Mandatory Appearance.</li>
+                                <li>Attend the scheduled Mandatory Appearance at RACCO. The RACCO Head will interview you and review the merits of the petition you have filed. After which, they will facilitate the endorsement of your petition to National Authority for Child (NACC)- Central Office and provide their recommendation to NACC's Executive Director whether to grant or deny the petition.</li>
+                                <li>If NACC-Central Office found the petition not sufficient or complete, they will issue a written communication to RACCO. You may need to comply and submit the lacking documents </li>
+                                <li>NACC Executive Director to sign decision and issue Order of Adoption or Denial. The said order will be transmitted via email of RACCO, PAPs and concerned Local Civil Registrar.</li>
+                                <li>Prepare acknowledgement letter of the receipt of the said Order and send via email of NACC copy furnishing the RACCO.</li>
+                                <li>After 15 working days, and no Motion for Reconsideration is filed, NACC Executive Director to issue Certificate of Finality</li>
+                                <li>Physical copies of the Order of Adoption and Certificate of Finality will be transmitted to you by the RACCO</li>
+                                <li>Once received, facilitate the registration of the Order of Adoption in the concerned Local Civil Registry Office where the child was born/ found.</li>
+                                <li>One (1) year post adoption monitoring to be conducted by adoption social worker. Case will be closed after a closing summary report has been submitted by the adoption social worker to RACCO.</li>
+                              </ol>
+
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <br>
+                      <br>
 
 
-  <!-- Iframe 2 -->
-    <div class="row" style="position: relative; padding:50px 30px;">
+                    </div>
+                  </div>
+                  <br>
+
+                  <div class="row">
+                    <div class="col-sm-12">
+                      
+                      <!-- Button trigger modal -->
+                      <button type="button" class="btn btn-primary w-100 h-100 btn-sm" data-bs-toggle="modal" data-bs-target="#staticBackdrop2a">
+                        LIST OF REQUIREMENTS PER CATEGORY
+                      </button>
+
+                      <!-- Modal -->
+                      <div class="modal fade" id="staticBackdrop2a" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                              <p><b>List of Requirements per Category</b></p>
+                              <ol >
+                                <li><a href="https://docs.google.com/document/d/1kLTJgoO9ynB_8lrh0VU2RqGtjg4BkUzO" target="_blank">Regular or Adoption of a child legally available for adoption</a></li>
+                                <li><a href="https://docs.google.com/document/d/1luLe-eAoxUm894yq-i_whCBk-tOiI--t" target="_blank">Relative adoption (of a child within 4th degree)</a></li>
+                                <li><a href="https://docs.google.com/document/d/1F5ZBIt37R3vnT7oJJBwe-9dlSUIpAWWVFoP4MibQ1Rk" target="_blank">Relative adoption (joint adoption of biological parent and step-parent)</a></li>
+                                <li><a href="https://docs.google.com/document/d/18cc5YMgp2o3uzDiV88wITPreorh7s3Qo" target="_blank">Relative Adoption (of own non-marital child).</a></li>
+                                <li><a href="https://docs.google.com/document/d/1Ogchu_pKqZIqlC9mR2ooXIR9NspfzKiAwIs_2c6lgas" target="_blank">Step-parent adoption</a></li>
+                                <li><a href="https://docs.google.com/document/d/1-XVvUxg2dJBakgjsOirva8u1pYfCdN50" target="_blank">Adult Adoption</a></li>
+                              </ol>
+
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+
+
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+        <div class="col-sm-2" >
+        </div>
+      </div>
+  <!-- FILING A PETITION FOR ADMINISTRATIVE ADOPTION -->
+
+
+  <!-- FILING A PETITION FOR RECTIFICATION OF SIMULATED BIRTH (SIBRA) -->
+    <p id="sibra"></p>
+    <div class="row" style="position: relative; padding:150px 30px;">
+      <!-- Background Blur Overlay -->
+        <div style="position: absolute; 
+                    top: 0; left: 0; width: 100%; height: 100%;
+                    background-image: url('assets/images/racco-mimaropa/sibra.jpeg'); 
+                    background-size: cover; 
+                    background-position: center; 
+                    filter: blur(13px);
+                    ">
+        </div>
+
+        <div class="col-sm-2" >
+        </div>
+        <div class="col-sm-8" >
+
+          <div class="row">
+            <div class="card" style="background: rgba(255, 255, 255, 0.6);  border: none;" >
+            <div class="card-body">
+              <div class ="row">
+
+                <div class="col-sm-5" >
+                  <p></p>
+                  <h1 align="left">SIMULATED BIRTH RECTIFICATION ACT (SIBRA)</h1>
+                </div>
+
+                <div class="col-sm-7" >
+
+                  <!-- Parallel Lines -->
+                  <div style="display: flex; flex-direction: column; gap: 5px; margin: 10px 0;">
+                    <hr style="width: 100%; border: 1px solid #ccc; margin: 0;">
+                    <hr style="width: 100%; border: 1px solid #ccc; margin: 0;">
+                  </div>
+                    <p align="justify">Simulation of birth is an act of tampering the civil registry of a child making it appear in the birth records that he/she was born to a person who is not his/her biological mother, causing such child/person to lose his/her true identity and status. This action is punishable under Article 347 of the Revised Penal Code and Republic Act 11642.</p>
+                    <p align="justify">However, with the passage of the Republic Act 11222, as amended by the Republic Act 11642, person/s who simulated a child's birth was given the opportunity to come out in the open and correct the birth records of the child under their care without fear of being prosecuted either criminally, civilly or administratively as the law grants amnesty, provided they will file the necessary petition. By availing of the privilege granted by the law, the existing parent-child relationship between them will be legalized. </p>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary w-100  btn-sm" data-bs-toggle="modal" data-bs-target="#staticBackdrop3">
+                      STEPS IN FILING A PETITION FOR RECTIFICATION OF SIMULATED BIRTH 
+                    </button>
+
+                      <!-- Modal -->
+                      <div class="modal fade" id="staticBackdrop3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                              <p><b>STEPS IN FILING A PETITION FOR RECTIFICATION OF SIMULATED BIRTH:</b></p>
+                              <ol align="justify">
+                                <li>Attend a pre-adoption forum. If found qualified under the law, proceed with the next step. </li>
+                                <li>Secure and complete documentary requirements. Prepare petition and facilitate notarization thereof.</li>
+                                <li>File the petition with complete supporting documents before the Local Social Welfare and Development Office (LSWDO) which has jurisdiction where the child resides.</li>
+                                <li>Pay necessary socialized fees at the Local Government Unit. </li>
+                                <li>LSWDO review and transmit petition with complete documents to Regional Alternative Child Care Office (RACCO)</li>
+                                <li>RACCO will acknowledgement and review your petition. Once found complete in documents, a RACCO social worker will coordinate with you for in-person assessment and interview. He/ She will prepare a Social Case Study Report</li>
+                                <li>An in-person Mandatory Appearance to RACCO Head will be scheduled. </li>
+                                <li>Attend the scheduled Mandatory Appearance at RACCO. The RACCO Head will interview you and review the merits of the petition you have filed. After which, they will facilitate the endorsement of your petition to National Authority for Child (NACC)- Central Office and provide their recommendation to NACC's Executive Director whether to grant or deny the petition.</li>
+                                <li>If NACC-Central Office found the petition not sufficient or complete, they will issue a written communication to RACCO. You may need to comply and submit the lacking documents </li>
+                                <li>NACC Executive Director to sign decision and issue Order of Adoption or Denial. The said order will be transmitted via email of RACCO, PAPs and concerned Local Civil Registrar. </li>
+                                <li>Prepare acknowledgement letter of the receipt of the said Order and send via email of NACC copy furnishing the RACCO.</li>
+                                <li>After 15 working days, and no Motion for Reconsideration is filed, NACC Executive Director to issue Certificate of Finality </li>
+                                <li>Physical copies of the Order of Adoption and Certificate of Finality will be transmitted to you by the RACCO </li>
+                                <li>Once received, facilitate the registration of the Order of Adoption in the concerned Local Civil Registry Office where the child was born/ found.</li>
+                                <li>One (1) year post adoption monitoring to be conducted by adoption social worker. Case will be closed after a closing summary report has been submitted by the adoption social worker to RACCO.</li>
+                              </ol>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                <br>
+                <br>
+                <div class="row">
+                  <div class="col-sm-12">
+                    <p>Click <a href="https://docs.google.com/document/d/1d2n1v7pAp3TN0qZeQURuSTBVRLR30kvt" target="_blank">here</a> for the list of requirements and templates</p>
+                  </div>
+                </div>
+
+                </div>
+              </div>
+
+
+
+            </div>
+          </div>
+          </div>
+        </div>
+        <div class="col-sm-2" >
+        </div>
+      </div>
+  <!-- FILING A PETITION FOR RECTIFICATION OF SIMULATED BIRTH (SIBRA) -->
+
+
+  <!-- List of Requirements -->
+    <p id="listofreq"></p>
+    <div class="row" style="position: relative; padding:150px 30px;">
+      <!-- Background Blur Overlay -->
+        <div style="position: absolute; 
+                    top: 0; left: 0; width: 100%; height: 100%;
+                    background-image: url('assets/images/racco-mimaropa/forms and templates.jpg'); 
+                    background-size: cover; 
+                    background-position: center; 
+                    filter: blur(13px);
+                    ">
+        </div>
+
+        <div class="col-sm-2" >
+        </div>
+        <div class="col-sm-8" >
+
+          <div class="row">
+            <div class="card" style="background: rgba(255, 255, 255, 0.6);  border: none;" >
+            <div class="card-body">
+              <div class ="row">
+
+                <div class="col-sm-5" >
+                  <p></p>
+                  <h1 align="center">List of Requirements</h1>
+
+                  <!-- Parallel Lines -->
+                  <div style="display: flex; flex-direction: column; gap: 5px; margin: 10px 0;">
+                    <hr style="width: 100%; border: 1px solid #ccc; margin: 0;">
+                    <hr style="width: 100%; border: 1px solid #ccc; margin: 0;">
+                  </div>
+
+                  <p align="justify">The list of requirements will depend on the type or category of adoption you will process. For complete set of documentary requirements, please select the applicable type of adoption.</p>
+                </div>
+
+                <div class="col-sm-7" >
+
+                  <!-- Parallel Lines -->
+                  <div style="display: flex; flex-direction: column; gap: 5px; margin: 10px 0;">
+                    <hr style="width: 100%; border: 1px solid #ccc; margin: 0;">
+                    <hr style="width: 100%; border: 1px solid #ccc; margin: 0;">
+                  </div>
+
+                  <!-- accordion-->
+                    <div class="accordion" id="accordionExample1">
+                      <div class="accordion-item" >
+                        <h2 class="accordion-header" id="headingOne1">
+                          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne1" aria-expanded="true" aria-controls="collapseOne1" >
+                            Adoption under SIBRA
+                          </button>
+                        </h2>
+                        <div id="collapseOne1" class="accordion-collapse collapsed" aria-labelledby="headingOne1" data-bs-parent="#accordionExample1">
+                          <div class="accordion-body">
+                            <p>• <a href="assets/docs/Adoption under SIBRA/RA11222 Checklist.docx">RA11222 Checklist</a></p>
+
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo2">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo2" aria-expanded="false" aria-controls="collapseTwo2">
+                            Adult Adoption
+                          </button>
+                        </h2>
+                        <div id="collapseTwo2" class="accordion-collapse collapse" aria-labelledby="headingTwo2" data-bs-parent="#accordionExample1">
+                          <div class="accordion-body">
+                            <p>• <a href="assets/docs/Adult Adoption/CHECKLIST ADULT ADOPTION.docx">Checklist Adult Adoption</a></p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree3">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree3" aria-expanded="false" aria-controls="collapseThree3">
+                            Application as Prospective Adoptive Parents
+                          </button>
+                        </h2>
+                        <div id="collapseThree3" class="accordion-collapse collapse" aria-labelledby="headingThree3" data-bs-parent="#accordionExample1">
+                          <div class="accordion-body">
+                            <p>• <a href="assets/docs/Application as Prospective Adoptive Parents/Checklist for Application PAPs.docx">Checklist for Application PAPs</a></p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree4">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree4" aria-expanded="false" aria-controls="collapseThree4">
+                            Regular or Adoption of  a child legally available for adoption
+                          </button>
+                        </h2>
+                        <div id="collapseThree4" class="accordion-collapse collapse" aria-labelledby="headingThree4" data-bs-parent="#accordionExample1">
+                          <div class="accordion-body">
+                            <p>• <a href="assets/docs/Regular or Adoption of  a child legally available for adoption/CHECKLIST ADOPTION OF LEGALLY AVAILABLE CHILD(IP_FA and REGULAR).docx">CHECKLIST ADOPTION OF LEGALLY AVAILABLE CHILD(IP_FA and REGULAR)</a></p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree5">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree5" aria-expanded="false" aria-controls="collapseThree5">
+                            Relative Adoption (adoption of own non-marital child)
+                          </button>
+                        </h2>
+                        <div id="collapseThree5" class="accordion-collapse collapse" aria-labelledby="headingThree5" data-bs-parent="#accordionExample1">
+                          <div class="accordion-body">
+                            <p>• <a href="assets/docs/Relative Adoption (adoption of own non-marital child/Relative Adoption (one_s own non-marital).docx">Relative Adoption (one_s own non-marital)</a></p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree6">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree6" aria-expanded="false" aria-controls="collapseThree6">
+                            Relative Adoption (Joint Adoption)
+                          </button>
+                        </h2>
+                        <div id="collapseThree6" class="accordion-collapse collapse" aria-labelledby="headingThree6" data-bs-parent="#accordionExample1">
+                          <div class="accordion-body">
+                            <p>• <a href="assets/docs/Relative Adoption (Joint Adoption)/Checklist  Relative (one_s own non-marital and step-parent).docx">Checklist  Relative (one_s own non-marital and step-parent)</a></p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree7">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree7" aria-expanded="false" aria-controls="collapseThree7">
+                            Relative Adoption Proper (Adoption of a relative within 4th degree)
+                          </button>
+                        </h2>
+                        <div id="collapseThree7" class="accordion-collapse collapse" aria-labelledby="headingThree7" data-bs-parent="#accordionExample1">
+                          <div class="accordion-body">
+                            <p>• <a href="assets/docs/Relative Adoption Proper (Adoption of a relative within 4th degree)/Relative Adoption Proper Checklist.docx">Relative Adoption Proper Checklist</a></p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree8">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree8" aria-expanded="false" aria-controls="collapseThree8">
+                            Step-parent Adoption
+                          </button>
+                        </h2>
+                        <div id="collapseThree8" class="accordion-collapse collapse" aria-labelledby="headingThree8" data-bs-parent="#accordionExample1">
+                          <div class="accordion-body">
+                            <p>• <a href="assets/docs/Step-parent Adoption/STEP-PARENT ADOPTION CHECKLIST.docx">STEP-PARENT ADOPTION CHECKLIST</a></p>
+                          </div>
+                        </div>
+                      </div>
+
+
+                    </div>
+
+                  <!-- accordion-->
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+        <div class="col-sm-2" >
+        </div>
+      </div>
+  <!-- List of Requirements -->
+
+
+  <!-- Question -->
+
+    <div class="row" style="position: relative; padding:150px 30px;">
+      <!-- Background Blur Overlay -->
+        <div style="position: absolute; 
+                    top: 0; left: 0; width: 100%; height: 100%;
+                    background-image: url('assets/images/racco-mimaropa/question.jpg'); 
+                    background-size: cover; 
+                    background-position: center; 
+                    filter: blur(13px);
+                    ">
+        </div>
+
         <div class="col-sm-1" >
         </div>
         <div class="col-sm-10" >
 
+          <div class="row">
+            <div class="card" style="background: rgba(255, 255, 255, 0.6);  border: none;" >
+            <div class="card-body">
+              <div class ="row">
 
+                <div class="col-sm-6" >
+                  <img src="assets/images/racco-mimaropa/questions2.jpg" alt="Logo" style="width: 70%; height: auto; display: block; margin: auto;">
+
+                  <br>
+                  <p align="justify">You may visit us in our office for an in-person consultation or contact us through email, phone number or social media.</p>
+                  <p><b><i class="bi bi-map-fill"></i></b> 4th floor Textron Building, 168 Luna Mencias St. Brgy. Addition Hills, San Juan City</p>
+                  <p><b><i class="bi bi-envelope-at-fill"></i></b> <a href="mailto:racco4b@nacc.gov.ph">racco4b@nacc.gov.ph</a></p>
+                  <p><b><i class="bi bi-telephone-fill"></i></b> 09626413652</p>
+                  <p><b><i class="bi bi-facebook"></i></b> <a href="https://www.facebook.com/profile.php?id=100091857485121" style="color: red;">NACC RACCO MIMAROPA</a></p>
+
+
+                </div>
+
+                <div class="col-sm-6" >
+
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d965.2736703536863!2d121.03725606951058!3d14.593680399118245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c82dc768d2b1%3A0x1cf98d21e7c86a21!2s168%20Luna%20Mencias%2C%20San%20Juan%2C%201500%20Kalakhang%20Maynila!5e0!3m2!1sen!2sph!4v1741053989307!5m2!1sen!2sph" width="100%" height="100%" style="border:1;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  
+                </div>
+              </div>
+
+
+
+            </div>
+          </div>
+          </div>
         </div>
         <div class="col-sm-1" >
         </div>
       </div>
-  <!-- Iframe 2 -->
-
+  <!-- Question -->
 
   <!-- footer -->
     <footer class="bg-warning text-white text-center text-sm-start">
+
         <!-- Copyright -->
         <div class="text-center p-3 bg-secondary">
-      <p style="font-size: 10px;">Innovation made by Regional Alternative Child Care Office - MIMAROPA for adoptive parents. Est. 2025</p>
+          <p style="font-size: 10px;">Innovation made by Regional Alternative Child Care Office - MIMAROPA for adoptive parents. Est. 2025</p>
         </div>
     </footer>
+
+
+
 
   <!-- footer -->
 
